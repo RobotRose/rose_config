@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>rose_config</name>
+  <version>0.0.0</version>
+  <description>The rose_config package contains robot-specific files and scripts to load envoironment variables.</description>
+  
+  <maintainer email="beek@robot-rose.nl">Loy van Beek</maintainer>
+  <license>TODO</license>
+
+  <url type="website">http://remote.robot-rose.nl/mediawiki/index.php/REP4_-_Configuration_management</url>
+  <author email="beek@robot-rose.nl">Loy van Beek</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+  </export>
+</package>
