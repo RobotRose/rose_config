@@ -8,6 +8,9 @@ export ROSCONSOLE_CONFIG_FILE=`rospack find rose_tools`/rosconsole_config_files/
 export SETUP_COMMAND_PC1="$ROSE_SCRIPTS/setup_ROS.sh /opt/ros/hydro/ 10.8.0.1 http://rosepc1:11311 /home/rose/git/"
 export SETUP_COMMAND_PC2="$ROSE_SCRIPTS/setup_ROS.sh /opt/ros/hydro/ 10.8.0.2 http://rosepc1:11311 /home/rose/git/"
 
+# .rosinstall location
+export ROSINSTALL_LOCATION="/home/mathijs/git/rose"
+
 # Source external configurations
 
 # Robot model
