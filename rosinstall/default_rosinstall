@@ -78,3 +78,8 @@
         uri:        'https://github.com/RobotRose/rose_html5_gui.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/rose_system_validation, 
+        uri:        'https://github.com/RobotRose/rose_system_validation.git',
+        version:    master
+    }
