@@ -5,7 +5,7 @@ export ROSE_CONFIG="/home/mathijs/git/rose/shared/src/rose_config"
 export ROSE_TOOLS="/home/mathijs/git/rose/shared/src/rose_tools"
 
 # Workspaces
-export WORKSPACES_FILE=${ROSE_CONFIG}/workspaces/default.workspace
+export WORKSPACES_FILE=${ROSE_CONFIG}/workspaces/mathijs.ws
 
 # Rosconsole settings
 export ROSCONSOLE_CONFIG_FILE=${ROSE_TOOLS}/rosconsole_config_files/custom_rosconsole_levels.config
