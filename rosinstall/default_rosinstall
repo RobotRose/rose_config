@@ -1,9 +1,4 @@
 - git: {
-        local-name: rose, 
-        uri:        'https://github.com/RobotRose/rose.git', 
-        version:    develop
-    }
-- git: {
         local-name: rose/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
         version:    master
