@@ -99,7 +99,7 @@
         version:    master
     }
 - git: {
-        local-name: rose/src/rose_msgs, 
+        local-name: shared/src/rose_msgs, 
         uri:        'https://github.com/RobotRose/rose_msgs.git',
         version:    master
     }
@@ -124,7 +124,7 @@
         version:    master
     }
 - git: {
-        local-name: shared/src/rose21_base, 
+        local-name: rose/src/rose21_base, 
         uri:        'https://github.com/RobotRose/rose21_base.git',
         version:    master
     }
