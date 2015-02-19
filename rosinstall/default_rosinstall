@@ -103,3 +103,8 @@
         uri:        'https://github.com/RobotRose/rose21_drivers.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/rose_navigation, 
+        uri:        'https://github.com/RobotRose/rose_navigation.git',
+        version:    master
+    }
