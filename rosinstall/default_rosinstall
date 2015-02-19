@@ -128,3 +128,8 @@
         uri:        'https://github.com/RobotRose/rose21_base.git',
         version:    master
     }
+- git: {
+        local-name: shared/src/rose_shared_variables, 
+        uri:        'https://github.com/RobotRose/rose_shared_variables.git',
+        version:    master
+    }
