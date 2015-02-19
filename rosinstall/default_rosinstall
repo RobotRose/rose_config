@@ -123,3 +123,8 @@
         uri:        'https://github.com/RobotRose/ros_clipper.git',
         version:    master
     }
+- git: {
+        local-name: shared/src/rose21_base, 
+        uri:        'https://github.com/RobotRose/rose21_base.git',
+        version:    master
+    }
