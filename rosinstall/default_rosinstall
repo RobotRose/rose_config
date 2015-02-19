@@ -118,8 +118,3 @@
         uri:        'https://github.com/RobotRose/rose_navigation.git',
         version:    master
     }
-- git: {
-        local-name: shared/src/ros_clipper, 
-        uri:        'https://github.com/RobotRose/ros_clipper.git',
-        version:    master
-    }
