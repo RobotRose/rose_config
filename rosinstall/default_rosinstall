@@ -1,4 +1,14 @@
 - git: {
+        local-name: shared/src/rose_tools, 
+        uri:        'https://github.com/RobotRose/rose_tools.git', 
+        version:    master
+    }
+- git: {
+        local-name: shared/src/rose_config, 
+        uri:        'https://github.com/RobotRose/rose_config.git', 
+        version:    master
+    }
+- git: {
         local-name: rose/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
         version:    master
