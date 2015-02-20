@@ -1,5 +1,5 @@
 # Location of the rose_config package
-export ROSE_CONFIG="/home/osch/github/rose/shared/src/rose_config"
+export ROSE_CONFIG="/home/osch/github/rose/shared/src/rose_config/rose_config"
 
 # Location of the rose_tools package
 export ROSE_TOOLS="/home/osch/github/rose/shared/src/rose_tools"
