@@ -1,0 +1,16 @@
+<launch>
+	<machine 
+		name="pc1" 
+		address="rosepc1" 
+		default="never" 
+		user="rose" 
+		env-loader="/usr/bin/setup_robot_env.sh"/>
+
+	<machine 
+		name="pc2" 
+		address="rosepc2" 
+		default="never" 
+		user="rose" 
+		env-loader="/usr/bin/setup_robot_env.sh"/>
+</launch>
+
