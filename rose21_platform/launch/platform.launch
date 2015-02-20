@@ -1,0 +1,42 @@
+<launch>  	
+    <!-- Do mapping argument -->
+    <arg name="mapping" default="false"/> 
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+
+    <!-- Machine configurations -->
+    <include file="$(find rose_machine_files)/machines/rose21.machine" unless="$(arg sim)"/>
+    <include file="$(find rose_machine_files)/machines/simulation.machine" if="$(arg sim)"/>
+
+    <!-- Laserscanner -->
+    <include file="$(find rose21_platform)/launch/laser_scanner.launch" unless="$(arg sim)">
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Platform controllers -->
+    <include file="$(find rose21_platform)/launch/platform_controllers.launch">
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Navigation -->" 
+    <include file="$(find rose21_platform)/launch/navigation.launch" unless="$(arg mapping)">
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Mapping -->
+    <include file="$(find rose21_platform)/launch/mapping.launch" if="$(arg mapping)"> 
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>  
+</launch>

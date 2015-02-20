@@ -1,0 +1,113 @@
+joints: ['arm_joint_box_1', 'arm_joint_cyl_1', 'arm_joint_cyl_2', 'arm_joint_cyl_3', 'arm_joint_cyl_4', 'arm_joint_cyl_5', 'gripper_joint_1', 'gripper_joint_2']
+
+# MX-64
+arm_joint_box_1:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_box_1
+    joint_speed: 10.0
+    motor:
+        id: 0
+        init: 2048
+        min: 364
+        max: 3745
+
+# MX-106
+arm_joint_cyl_1:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_cyl_1
+    joint_speed: 10.0
+    motor:
+        id: 1
+        init: 2048
+        min: 944
+        max: 3174
+
+# MX-64
+arm_joint_cyl_2:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_cyl_2
+    joint_speed: 10.0
+    motor:
+        id: 2
+        init: 2048
+        min: 1018
+        max: 3128
+
+# MX-64
+arm_joint_cyl_3:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_cyl_3
+    joint_speed: 10.0
+    motor:
+        id: 3
+        init: 2048
+        min: 901
+        max: 3190
+
+# MX-28
+arm_joint_cyl_4:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_cyl_4
+    joint_speed: 10.0
+    motor:
+        id: 4
+        init: 2048
+        min: 990
+        max: 3063
+
+# MX-106
+arm_joint_cyl_5:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: arm_joint_cyl_5
+    joint_speed: 10.0
+    motor:
+        id: 5
+        init: 2048
+        min: 753
+        max: 3334
+
+# MX-28
+gripper_joint_1:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: gripper_joint_1
+    joint_speed: 10.0
+    motor:
+        id: 6
+        init: 2048
+        min: 0
+        max: 4096
+
+# AX-18
+gripper_joint_2:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: gripper_joint_2
+    joint_speed: 10.0
+    motor:
+        id: 7
+        init: 512
+        min: 369
+        max: 875
