@@ -133,3 +133,8 @@
         uri:        'https://github.com/RobotRose/rose_shared_variables.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/rose_perception, 
+        uri:        'https://github.com/RobotRose/rose_perception.git',
+        version:    master
+    }
