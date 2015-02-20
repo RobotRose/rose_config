@@ -134,6 +134,11 @@
         version:    master
     }
 - git: {
+        local-name: gui/src/rose_gui_application, 
+        uri:        'https://github.com/RobotRose/rose_qt_ui.git',
+        version:    master
+    }
+- git: {
         local-name: rose/src/rose_perception, 
         uri:        'https://github.com/RobotRose/rose_perception.git',
         version:    master
