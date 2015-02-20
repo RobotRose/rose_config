@@ -1,0 +1,4 @@
+# Location of bumpers, with increasing ID, starting at 0
+# Coordinates with respect to base_link
+bumper_footprints: [ [ [1.0, 1.0], [-1.0, 1.0 ], [-1.0, -1.0], [1.0, -1.0]]]
+

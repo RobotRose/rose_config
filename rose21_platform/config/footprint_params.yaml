@@ -1,0 +1,3 @@
+# Footprint polygon definition CCW, start at top left
+# Coordinates with respect to base_link
+footprint: [[0.39, 0.29], [-0.39, 0.29], [-0.39, -0.29], [0.39, -0.29]]
