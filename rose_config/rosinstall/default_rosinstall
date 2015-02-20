@@ -148,8 +148,8 @@
         uri:        'https://github.com/RobotRose/robai_arm_controller.git',
         version:    master
     }
-- git: {
-        local-name: simulator/src, 
-        uri:        'https://github.com/RobotRose/rose_simulator.git',
-        version:    master
-    }
+# - git: {
+#         local-name: simulator/src, 
+#         uri:        'https://github.com/RobotRose/rose_simulator.git',
+#         version:    master
+#     }
