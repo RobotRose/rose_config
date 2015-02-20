@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <name>rose_machine_files</name>
+  <version>0.0.0</version>
+  <description>The rose_machine_files package</description>
+
+  <maintainer email="beek@robot-rose.nl">Loy van Beek</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
