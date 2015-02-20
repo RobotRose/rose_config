@@ -11,8 +11,8 @@ export WORKSPACES_FILE=${ROSE_CONFIG}/workspaces/rose.ws
 export ROSCONSOLE_CONFIG_FILE=${ROSE_TOOLS}/rosconsole_config_files/custom_rosconsole_levels.config
 
 # Setup commands, called in ~/.bashrc
-export SETUP_COMMAND_PC1="$ROSE_SCRIPTS/setup_ROS.sh /opt/ros/hydro/ 10.8.0.1 http://rosepc1:11311 /home/rose/git/"
-export SETUP_COMMAND_PC2="$ROSE_SCRIPTS/setup_ROS.sh /opt/ros/hydro/ 10.8.0.2 http://rosepc1:11311 /home/rose/git/"
+export SETUP_COMMAND_PC1="${ROSE_TOOLS}/scripts/setup_ROS.sh /opt/ros/hydro/ 10.8.0.1 http://rosepc1:11311 /home/rose/git/"
+export SETUP_COMMAND_PC2="${ROSE_TOOLS}/scripts/setup_ROS.sh /opt/ros/hydro/ 10.8.0.2 http://rosepc1:11311 /home/rose/git/"
 
 # .rosinstall location. The root of the locations that are installed by the wstool.
 # If you change the next location, you have to execute first_compile again, or 
