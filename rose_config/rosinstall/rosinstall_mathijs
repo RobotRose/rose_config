@@ -28,11 +28,11 @@
         uri:        'https://github.com/RobotRose/rose_luctor.git', 
         version:    master
     }
-# - git: {
-#         local-name: shared/src/rose_third_party, 
-#         uri:        'https://github.com/RobotRose/rose_third_party.git', 
-#         version:    master
-#     }
+- git: {
+        local-name: shared/src/rose_third_party, 
+        uri:        'https://github.com/RobotRose/rose_third_party.git', 
+        version:    master
+    }
 - git: {
         local-name: shared/src/rose_datamanager, 
         uri:        'https://github.com/RobotRose/rose_datamanager.git', 
