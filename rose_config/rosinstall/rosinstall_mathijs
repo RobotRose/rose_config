@@ -23,21 +23,21 @@
         uri:        'https://github.com/RobotRose/rose_server_multiple_client.git', 
         version:    master
     }
-# - git: {
-#         local-name: shared/src/rose_luctor, 
-#         uri:        'https://github.com/RobotRose/rose_luctor.git', 
-#         version:    master
-#     }
+- git: {
+        local-name: shared/src/rose_luctor, 
+        uri:        'https://github.com/RobotRose/rose_luctor.git', 
+        version:    master
+    }
 # - git: {
 #         local-name: shared/src/rose_third_party, 
 #         uri:        'https://github.com/RobotRose/rose_third_party.git', 
 #         version:    master
 #     }
-# - git: {
-#         local-name: shared/src/rose_datamanager, 
-#         uri:        'https://github.com/RobotRose/rose_datamanager.git', 
-#         version:    master
-#     }
+- git: {
+        local-name: shared/src/rose_datamanager, 
+        uri:        'https://github.com/RobotRose/rose_datamanager.git', 
+        version:    master
+    }
 # - git: {
 #         local-name: rose/src/navigation, 
 #         uri:        'https://github.com/ros-planning/navigation.git',
@@ -53,16 +53,16 @@
 #         uri:        'https://github.com/RobotRose/rose_operations.git',
 #         version:    master
 #     }
-# - git: {
-#         local-name: shared/src/rose_utils, 
-#         uri:        'https://github.com/RobotRose/rose_utils.git',
-#         version:    master
-#     }
-# - git: {
-#         local-name: shared/src/opteq_wheelunits_01, 
-#         uri:        'https://github.com/RobotRose/opteq_wheelunits_01.git',
-#         version:    master
-#     }
+- git: {
+        local-name: shared/src/rose_utils, 
+        uri:        'https://github.com/RobotRose/rose_utils.git',
+        version:    master
+    }
+- git: {
+        local-name: shared/src/opteq_wheelunits_01, 
+        uri:        'https://github.com/RobotRose/opteq_wheelunits_01.git',
+        version:    master
+    }
 # - git: {
 #         local-name: rose/src/rose_gaze_controller, 
 #         uri:        'https://github.com/RobotRose/rose_gaze_controller.git',
@@ -132,7 +132,7 @@
 #         local-name: shared/src/rose_shared_variables, 
 #         uri:        'https://github.com/RobotRose/rose_shared_variables.git',
 #         version:    master
-    }
+#    }
 # - git: {
 #         local-name: gui/src/rose_gui_application, 
 #         uri:        'https://github.com/RobotRose/rose_qt_ui.git',
