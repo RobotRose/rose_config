@@ -11,7 +11,7 @@ export WORKSPACES_FILE=${ROSE_CONFIG}/workspaces/mathijs.ws
 export ROSCONSOLE_CONFIG_FILE=${ROSE_TOOLS}/rosconsole_config_files/custom_rosconsole_levels.config
 
 # .rosinstall location. The root of the locations that are installed by the wstool.
-# If you change the next location, you have to remote the old .rosinstall at the current location. Secondly,
+# If you change the next location, you have to remove the old .rosinstall at the current location. Secondly,
 # one should run update_rosinstall.sh from the scripts folder
 export ROSINSTALL_ROOT="/home/mathijs/git/rose"
 

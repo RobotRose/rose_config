@@ -153,3 +153,13 @@
         uri:        'https://github.com/RobotRose/wpi_jaco.git',
         version:    requirement/1059_wpi_jaco_driver_testing
     }
+- git: {
+        local-name: development/src/kinova_moveit_config, 
+        uri:        'https://github.com/RobotRose/kinova_moveit_config.git',
+        version:    master
+    }
+- git: {
+        local-name: development/src/rose_moveit_controller, 
+        uri:        'https://github.com/RobotRose/rose_moveit_controller.git',
+        version:    master
+    }
