@@ -25,4 +25,4 @@ export ROSINSTALL_ROOT="/home/rose/git/rose"
 source ${ROSE_CONFIG}/models/model_rose21.config
 
 # Location
-source ${ROSE_CONFIG}/locations/location_rose.config
+source ${ROSE_CONFIG}/locations/location_engelen.config
