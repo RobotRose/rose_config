@@ -1,12 +1,12 @@
 - git: {
         local-name: shared/src/rose_tools, 
         uri:        'https://github.com/RobotRose/rose_tools.git', 
-        version:    requirement/1165_make_rosinstall_configurable
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_config, 
         uri:        'https://github.com/RobotRose/rose_config.git', 
-        version:    requirement/1165_make_rosinstall_configurable
+        version:    develop
     }
 - git: {
         local-name: rose/src/rose_watchdogs, 
@@ -161,5 +161,10 @@
 - git: {
         local-name: development/src/rose_moveit_controller, 
         uri:        'https://github.com/RobotRose/rose_moveit_controller.git',
+        version:    master
+    }
+- git: {
+        local-name: development/src/jaco-ros, 
+        uri:        'https://github.com/RobotRose/jaco-ros.git',
         version:    master
     }
