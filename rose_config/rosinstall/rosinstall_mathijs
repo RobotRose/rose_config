@@ -7,6 +7,7 @@
         local-name: shared/src/rose_config, 
         uri:        'https://github.com/RobotRose/rose_config.git', 
         version:    develop
+    }
 - git: {
         local-name: rose/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
