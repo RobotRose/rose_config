@@ -97,11 +97,11 @@
 #         uri:        'https://github.com/RobotRose/rose21_description.git',
 #         version:    master
 #     }
-# - git: {
-#         local-name: shared/src/rose_msgs, 
-#         uri:        'https://github.com/RobotRose/rose_msgs.git',
-#         version:    master
-#     }
+- git: {
+        local-name: shared/src/rose_msgs, 
+        uri:        'https://github.com/RobotRose/rose_msgs.git',
+        version:    master
+    }
 # - git: {
 #         local-name: rose/src/rose_hardware_interface, 
 #         uri:        'https://github.com/RobotRose/rose_hardware_interface.git',
