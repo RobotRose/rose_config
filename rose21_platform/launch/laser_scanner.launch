@@ -19,5 +19,5 @@
   	<node machine="pc2" pkg="rose21_laser_tf" type="rose21_laser_tf" name="laser_tf" output="screen" />
 
   	<!-- Run Laser Filter for clearing -->
-    <node machine="pc2" pkg="rose21_platform" type="laser_clear_filter" name="laser_clear_filter" /> 
+    <node machine="pc2" pkg="rose_laser_filter" type="rose_laser_filter" name="rose_laser_filter" /> 
 </launch>
