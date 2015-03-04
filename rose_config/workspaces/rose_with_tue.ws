@@ -1,5 +1,5 @@
-shared:/home/rose/github/rose/shared
-rose:/home/rose/github/rose/rose
-simulator:/home/rose/github/rose/simulator
-gui:/home/rose/github/rose/gui
-tue:/home/rose/github/rose/tue
+shared:/home/rose/git/rose/shared
+rose:/home/rose/git/rose/rose
+simulator:/home/rose/git/rose/simulator
+gui:/home/rose/git/rose/gui
+tue:/home/rose/git/rose/tue
