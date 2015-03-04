@@ -16,6 +16,7 @@ export ROSCONSOLE_CONFIG_FILE=${ROSE_TOOLS}/rosconsole_config_files/custom_rosco
 export ROSINSTALL_ROOT="/home/osch/github/rose"
 
 # Source external configurations
+export ROSINSTALL_CONFIG=${ROSE_CONFIG}/rosinstall/rosinstall_loy
 
 # Location
 source ${ROSE_CONFIG}/locations/location_rose.config
