@@ -1,5 +1,5 @@
-shared:/home/osch/github/rose/shared
-rose:/home/osch/github/rose/rose
-simulator:/home/osch/github/rose/simulator
-gui:/home/osch/github/rose/gui
-tue:/home/osch/github/rose/tue
+shared:/home/rose/github/rose/shared
+rose:/home/rose/github/rose/rose
+simulator:/home/rose/github/rose/simulator
+gui:/home/rose/github/rose/gui
+tue:/home/rose/github/rose/tue
