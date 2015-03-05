@@ -204,3 +204,8 @@
         uri:        'https://github.com/tue-robotics/ed_navigation.git',
         version:    master
     }
+- git: {
+        local-name: tue/src/ed_localization,
+        uri:        'https://github.com/tue-robotics/ed_localization.git',
+        version:    master
+    }
