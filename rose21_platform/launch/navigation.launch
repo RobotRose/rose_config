@@ -20,15 +20,7 @@
         <param name="self_diagnose" value="false"/>
     </node>-->
 
-    <!-- Run the map server -->
-    <node machine="pc1" name="map_server_localization" pkg="map_server" type="map_server" args="$(env LOCALIZATION_MAP).yaml"/> 
-
-    <node machine="pc1" name="map_server_planner" pkg="map_server" type="map_server" args="$(env NAVIGATION_MAP).yaml"> 
-      <remap from="map" to="map_planner"/> 
-      <remap from="map_metadata" to="map_metadata_planner"/> 
-      <remap from="static_map" to="static_map_planner"/> 
-    </node> 
-
+    <include file="$(find rose_ed_config)/launch/ed.launch"/>
     
     <!-- Run AMCL -->
     <node machine="pc2" name="amcl" pkg="amcl" type="amcl" output="screen" >
