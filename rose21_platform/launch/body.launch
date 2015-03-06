@@ -16,6 +16,9 @@
     <include file="$(find rose21_platform)/launch/kinect.launch" unless="$(arg sim)" />
     <include file="$(find ar_kinect_config)/launch/ar_track_alvar.launch" unless="$(arg sim)" />
 
+    <!-- Wifi investigation -->
+    <include file="$(find rose_system_validation)/launch/wlan.launch"/>
+
     <!-- Arm controller -->
     <include file="$(find arm_controller)/launch/arm_controller.launch">
         <arg name="mapping"     value="$(arg mapping)"/>
