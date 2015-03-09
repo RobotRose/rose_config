@@ -1,4 +1,4 @@
-image: klap_naviation.pgm
+image: klap_navigation.pgm
 resolution: 0.025000
 origin: [-25.000000, -25.000000, 0.000000]
 negate: 0
