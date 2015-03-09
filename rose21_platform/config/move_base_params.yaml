@@ -1,5 +1,5 @@
 global_frame_id: /map
-controller_frequency: 30.0
+controller_frequency: 20.0
 recovery_behavior_enabled: true
 recovery_behaviors: [{name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}, {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery} , {name: complete_reset, type: clear_costmap_recovery/ClearCostmapRecovery}]
 clearing_rotation_allowed: false
