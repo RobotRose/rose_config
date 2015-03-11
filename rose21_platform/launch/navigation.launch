@@ -39,10 +39,10 @@
        <param name="update_min_d" value="0.05"/>
        <param name="update_min_a" value="0.08"/>
        <param name="resample_interval" value="1"/>
-       <param name="odom_alpha1" value="1.2"/> 
-       <param name="odom_alpha2" value="1.4"/>
-       <param name="odom_alpha3" value="1.4"/>
-       <param name="odom_alpha4" value="1.2"/>
+       <param name="odom_alpha1" value="2.2"/> 
+       <param name="odom_alpha2" value="2.8"/>
+       <param name="odom_alpha3" value="2.8"/>
+       <param name="odom_alpha4" value="2.4"/>
        <param name="odom_alpha5" value="0.2"/>
        <!-- <param name="laser_max_beams" value="30"/> -->
        <param name="laser_sigma_hit" value="0.1"/>
