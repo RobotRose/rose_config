@@ -1,10 +1,10 @@
 global_frame_id: /map
-controller_frequency: 10.0
+controller_frequency: 15.0
 recovery_behavior_enabled: true
 recovery_behaviors: [{name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}, {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery} , {name: complete_reset, type: clear_costmap_recovery/ClearCostmapRecovery}]
 clearing_rotation_allowed: false
 planner_patience: 4.0
-planner_frequency: 0.3
+planner_frequency: 0.5
 
 
 # Configuration for recovery behaviors
