@@ -1,0 +1,3 @@
+# Location of the wheels
+# Coordinates with respect to base_link
+wheel_locations: [[],[],[],[]]

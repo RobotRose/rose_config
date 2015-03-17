@@ -1,0 +1,23 @@
+<launch>
+    <!-- Do mapping argument -->
+    <arg name="mapping" default="false"/> 
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+    
+  	<node machine="pc2" pkg="hokuyo_node" type="hokuyo_node" name="laser_scanner" output="screen" >
+  		<param name="min_ang" value="-1.5"/>
+  		<param name="max_ang" value="1.5"/>
+  		<param name="intensity" value="false"/>
+  		<param name="cluster" value="1"/>
+  		<param name="skip" value="0"/>
+  	</node>
+
+  	<node machine="pc2" pkg="rose21_laser_tf" type="rose21_laser_tf" name="laser_tf" output="screen" />
+
+  	<!-- Run Laser Filter for clearing -->
+    <node machine="pc2" pkg="rose_laser_filter" type="rose_laser_filter" name="rose_laser_filter" /> 
+</launch>

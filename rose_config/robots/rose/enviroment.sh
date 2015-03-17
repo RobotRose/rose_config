@@ -1,3 +1,6 @@
+# Name a.k.a. serial number of the robot
+export ROBOT_NAME="rose"
+
 # Location of the rose_config package
 export ROSE_CONFIG="/home/rose/git/rose/shared/src/rose_config/rose_config"
 
@@ -6,6 +9,15 @@ export ROSE_TOOLS="/home/rose/git/rose/shared/src/rose_tools"
 
 # Workspaces
 export WORKSPACES_FILE=${ROSE_CONFIG}/workspaces/rose_with_tue.ws
+
+# Robot root configuration folder
+export ROBOT_CONFIG_ROOT="${ROSE_CONFIG}/robots/${ROBOT_NAME}"
+
+# Config files
+export ROBOT_PARAMETERS="${ROBOT_CONFIG_ROOT}/config"
+
+# Launch files
+export ROBOT_LAUNCH="${ROBOT_CONFIG_ROOT}/launch"
 
 # Rosconsole settings
 export ROSCONSOLE_CONFIG_FILE=${ROSE_TOOLS}/rosconsole_config_files/custom_rosconsole_levels.config
