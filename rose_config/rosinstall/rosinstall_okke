@@ -1,7 +1,7 @@
 - git: {
         local-name: shared/src/rose_tools, 
         uri:        'https://github.com/RobotRose/rose_tools.git', 
-        version:    develop
+        version:    requirement/1207_platform_params_configurable
     }
 - git: {
         local-name: shared/src/rose_config, 
