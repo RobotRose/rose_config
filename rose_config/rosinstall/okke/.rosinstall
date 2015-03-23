@@ -9,12 +9,12 @@
         version:    requirement/1207_platform_params_configurable
     }
 - git: {
-        local-name: rose/src/rose_watchdogs, 
+        local-name: platform/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
         version:    requirement/1207_platform_params_configurable
     }
 #- git: {
-#        local-name: rose/src/rose_odometry, 
+#        local-name: platform/src/rose_odometry, 
 #        uri:        'https://github.com/RobotRose/rose_odometry.git', 
 #        version:    develop
 #    }
@@ -39,7 +39,7 @@
         version:    develop
     }
 - git: {
-        local-name: rose/src/navigation, 
+        local-name: platform/src/navigation, 
         uri:        'https://github.com/ros-planning/navigation.git',
         version:    hydro-devel
     }
@@ -64,7 +64,7 @@
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose_gaze_controller, 
+        local-name: gaze_controller/src/rose_gaze_controller, 
         uri:        'https://github.com/RobotRose/rose_gaze_controller.git',
         version:    develop
     }
@@ -89,12 +89,12 @@
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose_system_validation, 
+        local-name: tools/src/rose_system_validation, 
         uri:        'https://github.com/RobotRose/rose_system_validation.git',
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose21_description, 
+        local-name: description/src/rose21_description, 
         uri:        'https://github.com/RobotRose/rose21_description.git',
         version:    develop
     }
@@ -104,17 +104,17 @@
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose_hardware_interface, 
+        local-name: platform/src/rose_hardware_interface, 
         uri:        'https://github.com/RobotRose/rose_hardware_interface.git',
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose21_drivers, 
+        local-name: platform/src/rose21_drivers, 
         uri:        'https://github.com/RobotRose/rose21_drivers.git',
         version:    requirement/1207_platform_params_configurable
     }
 - git: {
-        local-name: rose/src/rose_navigation, 
+        local-name: platform/src/rose_navigation, 
         uri:        'https://github.com/RobotRose/rose_navigation.git',
         version:    develop
     }
@@ -124,7 +124,7 @@
         version:    develop
     }
 - git: {
-        local-name: rose/src/rose21_base, 
+        local-name: platform/src/rose21_base, 
         uri:        'https://github.com/RobotRose/rose21_base.git',
         version:    develop
     }
@@ -141,10 +141,10 @@
 - git: {
         local-name: rose/src/rose_perception, 
         uri:        'https://github.com/RobotRose/rose_perception.git',
-        version:    develop
+        version:    bug/dependencies
     }
 - git: {
-        local-name: rose/src/robai_arm_controller, 
+        local-name: arms/src/robai_arm_controller, 
         uri:        'https://github.com/RobotRose/robai_arm_controller.git',
         version:    requirement/1207_platform_params_configurable
     }
