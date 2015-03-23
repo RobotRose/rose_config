@@ -29,7 +29,7 @@
         version:    develop
     }
 - git: {
-        local-name: third_party/src/rose_third_party, 
+        local-name: rose/src/rose_third_party, 
         uri:        'https://github.com/RobotRose/rose_third_party.git', 
         version:    develop
     }
@@ -119,7 +119,7 @@
         version:    develop
     }
 - git: {
-        local-name: third_party/src/ros_clipper, 
+        local-name: rose/src/ros_clipper, 
         uri:        'https://github.com/RobotRose/ros_clipper.git',
         version:    develop
     }
@@ -153,3 +153,63 @@
 #         uri:        'https://github.com/RobotRose/rose_simulator.git',
 #         version:    develop
 #     }
+#
+#
+#
+#
+########### Install TU/e's ED 3D world model system
+- git: {
+        local-name: tue/src/ed,
+        uri:        'https://github.com/tue-robotics/ed.git',
+        version:    rose/996_ed_for_nav
+    }
+- git: {
+        local-name: tue/src/tue_filesystem,
+        uri:        'https://github.com/tue-robotics/tue_filesystem',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/geolib2,
+        uri:        'https://github.com/tue-robotics/geolib2',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/code_profiler,
+        uri:        'https://github.com/tue-robotics/code_profiler',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/tue_config,
+        uri:        'https://github.com/tue-robotics/tue_config.git',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/ed_object_models,
+        uri:        'https://github.com/tue-robotics/ed_object_models.git',
+        version:    rose/996_ed_for_nav
+    }
+- git: {
+        local-name: tue/src/tue_serialization,
+        uri:        'https://github.com/tue-robotics/tue_serialization',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/rgbd,
+        uri:        'https://github.com/tue-robotics/rgbd',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/ed_gui_server,
+        uri:        'https://github.com/tue-robotics/ed_gui_server.git',
+        version:    master
+    }
+- git: {
+        local-name: tue/src/ed_navigation,
+        uri:        'https://github.com/tue-robotics/ed_navigation.git',
+        version:    rose/996_ed_for_nav
+    }
+- git: {
+        local-name: tue/src/ed_localization,
+        uri:        'https://github.com/tue-robotics/ed_localization.git',
+        version:    rose/996_ed_for_nav
+    }

@@ -1,7 +1,7 @@
 # Rosinstall 
-export ROSINSTALL_FILE=${ROSE_CONFIG}/rosinstall/rosinstall_okke
+export ROSINSTALL="test"
 
-export ROS_ROOT="/opt/ros/hydro/"
+export ROS_VERSION="hydro"
 
 export ROS_IP="127.0.0.1"
 
