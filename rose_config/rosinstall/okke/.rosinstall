@@ -19,20 +19,20 @@
 #        version:    develop
 #    }
 - git: {
-        local-name: weird/sub1/src/rose_server_multiple_client, 
+        local-name: shared/src/rose_server_multiple_client, 
         uri:        'https://github.com/RobotRose/rose_server_multiple_client.git', 
         version:    develop
     }
 - git: {
-        local-name: weird/sub2/src/rose_luctor, 
+        local-name: shared/src/rose_luctor, 
         uri:        'https://github.com/RobotRose/rose_luctor.git', 
         version:    develop
     }
-#- git: {
-#        local-name: shared/src/rose_third_party, 
-#        uri:        'https://github.com/RobotRose/rose_third_party.git', 
-#        version:    develop
-#    }
+- git: {
+        local-name: third_party/src/rose_third_party, 
+        uri:        'https://github.com/RobotRose/rose_third_party.git', 
+        version:    develop
+    }
 - git: {
         local-name: shared/src/rose_datamanager, 
         uri:        'https://github.com/RobotRose/rose_datamanager.git', 
@@ -119,7 +119,7 @@
         version:    develop
     }
 - git: {
-        local-name: shared/src/ros_clipper, 
+        local-name: third_party/src/ros_clipper, 
         uri:        'https://github.com/RobotRose/ros_clipper.git',
         version:    develop
     }
