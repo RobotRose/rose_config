@@ -20,6 +20,8 @@ export SETUP_COMMAND_PC2="${ROSE_TOOLS}/scripts/setup_ROS.sh /opt/ros/hydro/ 10.
 export ROSINSTALL_ROOT="/home/rose/git/rose"
 
 # Source external configurations
+export ROSINSTALL_CONFIG=${ROSE_CONFIG}/rosinstall/rosinstall_all_develop
+
 
 # Robot model
 source ${ROSE_CONFIG}/models/model_rose21.config
