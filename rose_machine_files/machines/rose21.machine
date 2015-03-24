@@ -4,13 +4,13 @@
 		address="rosepc1" 
 		default="never" 
 		user="rose" 
-		env-loader="/usr/bin/setup_robot_env.sh"/>
+		env-loader="/usr/bin/setup_machine_env.sh"/>
 
 	<machine 
 		name="pc2" 
 		address="rosepc2" 
 		default="never" 
 		user="rose" 
-		env-loader="/usr/bin/setup_robot_env.sh"/>
+		env-loader="/usr/bin/setup_machine_env.sh"/>
 </launch>
 
