@@ -141,7 +141,7 @@
 - git: {
         local-name: rose/src/rose_perception, 
         uri:        'https://github.com/RobotRose/rose_perception.git',
-        version:    bug/dependencies
+        version:    develop
     }
 - git: {
         local-name: arms/src/robai_arm_controller, 
