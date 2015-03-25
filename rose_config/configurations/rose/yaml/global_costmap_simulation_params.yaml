@@ -1,0 +1,15 @@
+global_costmap:
+  global_frame: /map
+  inflation_radius: 2.0
+  robot_base_frame: /base_link
+  update_frequency: 1.0
+  publish_frequency: 1.0
+  static_map: false
+  rolling_window: false
+  track_unknown_space: false 
+  plugins: 
+    - {name: static_layer,          type: "costmap_2d::StaticLayer"}
+    # - {name: laser_obstacle_layer,  type: "costmap_2d::ObstacleLayer"}
+    - {name: kinect_obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+    - {name: simulation_obstacle_layer, type: "rose_costmap_2d_plugins::SimulationObstacleLayer"}
+    - {name: inflation_layer,       type: "costmap_2d::InflationLayer"}

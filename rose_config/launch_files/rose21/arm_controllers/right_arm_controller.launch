@@ -1,0 +1,76 @@
+<!-- -*- mode: XML -*- -->
+
+<launch>
+
+   
+
+    <!-- Start the Dynamixel Joint States Publisher -->
+    <!-- <node pkg="rose21_platform" type="dynamixel_joint_state_publisher.py" name="dynamixel_joint_states_publisher" output="screen" />  -->
+
+   <!-- Start all Dynamixels in the relaxed state -->
+   <!-- <node pkg="rose21_platform" type="relax_all_servos.py" name="relax_all_servos" output="screen"/> -->
+
+
+
+    <!-- Start the Dynamixel servo manager to control wubble arm -->
+    <node name="dynamixel_manager_arm" pkg="dynamixel_controllers" type="controller_manager.py" required="true" output="screen">
+        <rosparam>
+            namespace: rose_arm_manager
+            serial_ports:
+                rightArm:
+                    port_name: "/dev/ttyUSB0"
+                    baud_rate: 1000000
+                    min_motor_id: 0
+                    max_motor_id: 7
+                    update_rate: 20
+        </rosparam>
+    </node>
+
+
+     <!-- Start joint trajectory action controller -->
+    <rosparam file="$(env ROBOT_LAUNCH)/arm_controllers/trajectory_controllers.yaml" command="load"/>
+    <node name="trajectory_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=rose_arm_manager
+                --type=meta
+                right_arm_trajectory_controller
+                arm_joint_box_1
+                arm_joint_cyl_1
+                arm_joint_cyl_2
+                arm_joint_cyl_3
+                arm_joint_cyl_4
+                arm_joint_cyl_5
+                gripper_joint_1"
+          output="screen"/>
+
+    <!-- Start upper and lower arm joint controllers -->
+    <rosparam file="$(env ROBOT_LAUNCH)/arm_controllers/joints.yaml" command="load"/>
+    <node name="upper_arm_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
+          args="--manager=rose_arm_manager
+                --port=rightArm
+                --type=simple
+                arm_joint_box_1
+                arm_joint_cyl_1
+                arm_joint_cyl_2
+                arm_joint_cyl_3
+                arm_joint_cyl_4
+                arm_joint_cyl_5
+                gripper_joint_1
+                gripper_joint_2"
+          output="screen"/>
+
+
+
+    <!-- Start gripper grasp action controller 
+    <node name="gripper_grasp_controller" pkg="wubble2_robot" type="wubble_gripper_grasp_controller.py" output="screen" >
+        <param name="object_presence_pressure_threshold" value="1073.50"/>
+        <param name="object_presence_opening_threshold" value="0.026"/>
+        <param name="gripper_action_name" value="/wubble_gripper_action"/>
+        <param name="posture_action_name" value="/wubble_gripper_grasp_action"/>
+        <param name="grasp_query_name" value="/wubble_grasp_status"/>
+    </node> -->
+    
+
+
+
+</launch>
+
