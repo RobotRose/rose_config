@@ -1,17 +1,17 @@
 - git: {
         local-name: deployment/src/rose_tools, 
         uri:        'https://github.com/RobotRose/rose_tools.git', 
-        version:    requirement/1207_platform_params_configurable
+        version:    develop
     }
 - git: {
         local-name: deployment/src/rose_config, 
         uri:        'https://github.com/RobotRose/rose_config.git', 
-        version:    requirement/1207_platform_params_configurable
+        version:    develop
     }
 - git: {
         local-name: rose/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
-        version:    requirement/1207_platform_params_configurable
+        version:    develop
     }
 #- git: {
 #        local-name: rose/src/rose_odometry, 
@@ -81,7 +81,7 @@
 - git: {
         local-name: gui/src/rose_joystick, 
         uri:        'https://github.com/RobotRose/rose_joystick.git',
-        version:    develop
+        version:    requirement/1231_control_mico
     }
 # - git: {
 #         local-name: gui/src/rose_html5_ui, 
@@ -111,7 +111,7 @@
 # - git: {
 #         local-name: rose/src/rose21_drivers, 
 #         uri:        'https://github.com/RobotRose/rose21_drivers.git',
-#         version:    requirement/1207_platform_params_configurable
+#         version:    develop
 #     }
 # - git: {
 #         local-name: rose/src/rose_navigation, 
@@ -146,20 +146,25 @@
 - git: {
         local-name: development/src/rose_arm_controller, 
         uri:        'https://github.com/RobotRose/rose_arm_controller.git',
-        version:    requirement/1059_wpi_jaco_driver_testing
+        version:    bug/fix_for_new_smc
     }
 - git: {
         local-name: development/src/wpi_jaco, 
         uri:        'https://github.com/RobotRose/wpi_jaco.git',
-        version:    requirement/1059_wpi_jaco_driver_testing
+        version:    configurable_parameters_for_mico
     }
 - git: {
-        local-name: development/src/kinova_moveit_config, 
-        uri:        'https://github.com/RobotRose/kinova_moveit_config.git',
-        version:    develop
+        local-name: development/src/lcsr_tf_tools, 
+        uri:        'https://github.com/jhu-lcsr/lcsr_tf_tools.git',
+        version:    master
     }
 - git: {
-        local-name: development/src/rose_moveit_controller, 
-        uri:        'https://github.com/RobotRose/rose_moveit_controller.git',
-        version:    develop
+        local-name: development/src/moveit_advanced, 
+        uri:        'https://github.com/RobotRose/moveit_advanced.git',
+        version:    fix_compile_dependencies
     }
+- git: {
+        local-name: development/src/rail_manipulation_msgs, 
+        uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
+        version:    master
+    }            
