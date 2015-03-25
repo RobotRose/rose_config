@@ -209,3 +209,8 @@
         uri:        'https://github.com/tue-robotics/ed_localization.git',
         version:    rose/996_ed_for_nav
     }
+- git: {
+        local-name: tue/src/ed_sensor_integration,
+        uri:        'https://github.com/tue-robotics/ed_localization.git',
+        version:    master
+    }
