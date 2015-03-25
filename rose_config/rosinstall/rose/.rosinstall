@@ -153,11 +153,12 @@
 #         uri:        'https://github.com/RobotRose/rose_simulator.git',
 #         version:    develop
 #     }
+
 ########### Install TU/e's ED 3D world model system
 - git: {
         local-name: tue/src/ed,
         uri:        'https://github.com/tue-robotics/ed.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/tue_filesystem,
@@ -182,7 +183,7 @@
 - git: {
         local-name: tue/src/ed_object_models,
         uri:        'https://github.com/tue-robotics/ed_object_models.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/tue_serialization,
@@ -192,7 +193,7 @@
 - git: {
         local-name: tue/src/rgbd,
         uri:        'https://github.com/tue-robotics/rgbd',
-        version:    master
+        version:   master 
     }
 - git: {
         local-name: tue/src/ed_gui_server,
@@ -202,15 +203,15 @@
 - git: {
         local-name: tue/src/ed_navigation,
         uri:        'https://github.com/tue-robotics/ed_navigation.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/ed_localization,
         uri:        'https://github.com/tue-robotics/ed_localization.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/ed_sensor_integration,
-        uri:        'https://github.com/tue-robotics/ed_localization.git',
-        version:    master
+        uri:        'https://github.com/tue-robotics/ed_sensor_integration.git',
+        version:    rose/996_ed_for_nav_2
     }
