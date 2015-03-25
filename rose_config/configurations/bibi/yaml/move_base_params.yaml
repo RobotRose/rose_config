@@ -1,0 +1,27 @@
+global_frame_id: /map
+controller_frequency: 10.0
+recovery_behavior_enabled: true
+recovery_behaviors: [{name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}, {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery} , {name: complete_reset, type: clear_costmap_recovery/ClearCostmapRecovery}]
+clearing_rotation_allowed: false
+planner_patience: 4.0
+planner_frequency: 0.3
+
+
+# Configuration for recovery behaviors
+conservative_reset:
+  # When doing an conservative_reset reset, remove all voxels further than reset_distance from the robot
+  reset_distance: 1.00
+  layer_names:
+    - "laser_obstacle_layer"
+
+aggressive_reset:
+  # When doing an aggressive reset, remove all voxels further than reset_distance from the robot
+  reset_distance: 0.45
+  layer_names:
+    - "laser_obstacle_layer"
+
+complete_reset:
+  # When doing an complete_reset, remove all voxels further than reset_distance from the robot
+  reset_distance: 0.0
+  layer_names:
+    - "laser_obstacle_layer"

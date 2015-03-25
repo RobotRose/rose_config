@@ -1,0 +1,57 @@
+<launch>
+    <!-- Do mapping argument -->
+    <arg name="mapping" default="false"/> 
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+    
+    <!-- Power controller -->
+    <node machine="pc1" pkg="rose21_power_controller" type="rose21_power_controller" name="power_controller" output="screen" unless="$(arg sim)">
+	   <param name="serial_port" value="/dev/usb2serial/power_controller" />
+	   <param name="baudrate" value="115200" />
+    </node>
+
+    <!-- Move_base_smc node -->
+    <node machine="pc2" pkg="rose_move_base_smc" type="rose_move_base_smc" name="move_base_smc" output="screen"/>
+
+    <!-- Drive controller -->
+    <node machine="pc2" pkg="rose21_drive_controller" type="rose21_drive_controller" name="drive_controller" output="screen" />
+
+    <!-- Platform controller -->
+    <node machine="pc2" pkg="rose21_platform_controller" type="rose21_platform_controller" name="platform_controller" output="screen" unless="$(arg sim)" >
+        <rosparam command="load" ns="platform_controller" file="$(env ROBOT_PARAMETERS)/rose21_platform_controller.yaml"  />
+    </node>
+
+    <!-- SIMULATION platform_controller -->
+    <node machine="pc2" pkg="rose20_gazebo_plugins" type="SimWheelController" name="SimWheelController" output="screen" if="$(arg sim)"/>
+  	
+    <!-- Platform transform -->
+    <node machine="pc2" pkg="rose21_platform_tf" type="rose21_platform_tf" name="platform_tf" output="screen">
+        <env name="ROSCONSOLE_CONFIG_FILE" value="$(env ROBOT_PARAMETERS)/rosconsole.conf"/>
+    </node>
+  	
+    <!-- Lift controller -->
+    <node machine="pc2" pkg="rose21_lift_controller" type="rose21_lift_controller" name="lift_controller" output="screen" unless="$(arg sim)">
+        <param name="serial_port" value="/dev/usb2serial/lift_controller" />
+        <param name="baudrate" value="115200" />
+    </node>
+
+    <!-- Lift transform -->
+    <node machine="pc2" pkg="rose21_lift_tf" type="rose21_lift_tf" name="lift_tf" output="screen" unless="$(arg sim)"/>
+
+    <!-- Arm transform -->
+    <node machine="pc1" pkg="rose21_arm_tf" type="rose21_arm_tf" name="arm_tf" output="screen" unless="$(arg sim)"/>
+
+    <!-- SIMULATION Lift transform -->
+    <node  if="$(arg sim)" pkg="tf" type="static_transform_publisher" name="base_lift_broadcaster" args="0.2 0.0 0.55 0.0 0 0.0 /base_link /lift_link 100"/>
+
+    <!-- Neck -->
+    <include file="$(env ROBOT_LAUNCH)/neck_controller.launch" unless="$(arg sim)" >
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+</launch>

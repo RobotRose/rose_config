@@ -1,0 +1,59 @@
+ <launch>
+    <!-- Do mapping argument -->
+    <arg name="mapping" default="false"/> 
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+
+    <!-- Machine configurations -->
+    <include file="$(find rose_machine_files)/machines/rose21.machine" unless="$(arg sim)"/>
+    <include file="$(find rose_machine_files)/machines/simulation.machine" if="$(arg sim)"/>
+
+    <!-- Kinect -->
+    <include file="$(env ROBOT_LAUNCH)/kinect.launch" unless="$(arg sim)" />
+    <include file="$(find ar_kinect_config)/launch/ar_track_alvar.launch" unless="$(arg sim)" />
+
+    <!-- Arm controller -->
+    <include file="$(find arm_controller)/launch/arm_controller.launch">
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Operation manager -->
+    <include file="$(find rose_operation_manager)/launch/operation_manager.launch" >
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <include file="$(find rose_operations)/launch/operations.launch" >
+        <arg name="mapping" value="$(arg mapping)"/>
+        <arg name="sim"   value="$(arg sim)"/>
+    </include>
+
+    <!-- Gui application (backend) --> 
+  	<include file="$(find rose_gui_application)/launch/application.launch" >
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Bounding box finder -->
+    <include file="$(find rose_bounding_box_finder)/launch/bounding_box_finder.launch" >
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+    <!-- Gaze controller -->
+    <include file="$(find rose_gaze_controller)/launch/start.launch" unless="$(arg sim)" >
+        <arg name="mapping"     value="$(arg mapping)"/>
+        <arg name="sim"         value="$(arg sim)"/>
+        <arg name="hardware"    value="$(arg hardware)"/>
+    </include>
+
+</launch>

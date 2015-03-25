@@ -1,0 +1,72 @@
+<launch>
+    <!-- Do mapping argument -->
+    <arg name="mapping" default="false"/>
+
+    <!-- Do not use machine files argument -->
+    <arg name="sim" default="false"/>
+
+    <!-- Hardware version -->
+    <arg name="hardware" default="simulation"/>
+
+    <!-- Combine visual and wheel odomotry 
+    <node machine="pc2" pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+        <param name="output_frame" value="/odom"/>
+        <param name="freq" value="50.0"/>
+        <param name="sensor_timeout" value="1.0"/>
+        <param name="odom_used" value="true"/>
+        <param name="imu_used" value="false"/>
+        <param name="vo_used" value="false"/>
+        <param name="debug" value="true"/>
+        <param name="self_diagnose" value="false"/>
+    </node>-->
+
+    <include file="$(find rose_ed_config)/launch/ed.launch"/>
+    
+    <!-- Run AMCL -->
+    <node machine="pc2" name="amcl" pkg="amcl" type="amcl" output="screen" >
+       <param name="odom_frame_id" value="/odom"/>
+       <param name="base_frame_id " value="/base_link"/>
+       <param name="global_frame_id" value="/map"/>
+       <param name="odom_model_type" value="omni"/>
+       <param name="update_min_d" value="0.05"/>
+       <param name="update_min_a" value="0.08"/>
+       <param name="resample_interval" value="1"/>
+       <param name="odom_alpha1" value="2.2"/> 
+       <param name="odom_alpha2" value="2.8"/>
+       <param name="odom_alpha3" value="2.8"/>
+       <param name="odom_alpha4" value="2.4"/>
+       <param name="odom_alpha5" value="0.2"/>
+       <!-- <param name="laser_max_beams" value="30"/> -->
+       <param name="laser_sigma_hit" value="0.1"/>
+       <param name="laser_sigma_hit" value="0.1"/>
+       <!-- <param name="recovery_alpha_slow" value="0.0001"/> -->
+       <!--<param name="recovery_alpha_fast" value="0.001"/> -->
+       <param name="use_map_topic" value="true"/>
+       <param name="first_map_only" value="true"/>
+    </node>
+  
+    <node machine="pc2" pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <remap from="map" to="map_planner"/> 
+        <rosparam command="load" ns="global_costmap" file="$(env ROBOT_PARAMETERS)/costmap_common_params.yaml"     />
+        <rosparam command="load" ns="local_costmap" file="$(env ROBOT_PARAMETERS)/costmap_common_params.yaml"     />
+
+        <rosparam unless="$(arg sim)"  command="load" file="$(env ROBOT_PARAMETERS)/global_costmap_params.yaml" />
+        <rosparam if="$(arg sim)"      command="load" file="$(env ROBOT_PARAMETERS)/global_costmap_simulation_params.yaml" />
+        <rosparam unless="$(arg sim)"  command="load" file="$(env ROBOT_PARAMETERS)/local_costmap_params.yaml" />
+        <rosparam if="$(arg sim)"      command="load" file="$(env ROBOT_PARAMETERS)/local_costmap_simulation_params.yaml" />
+        <rosparam                      command="load" file="$(env ROBOT_PARAMETERS)/move_base_params.yaml" />
+        <rosparam                      command="load" file="$(find rose_arc_local_planner)/config/rose_arc_local_planner.yaml"/>
+
+        <param name="base_local_planner" value="rose_navigation/rose_arc_local_planner" />
+        <!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" /> -->
+    </node>
+
+    <node machine="pc2" pkg="rose_relative_positioning" type="rose_relative_positioning" respawn="false" name="relative_positioning" output="screen"/>
+    
+    <!-- launch-prefix="valgrind tool=callgrind instr-atstart=no callgrind-out-file=/home/okke/move_base.log " -->
+    
+    <!-- For sim/fakelocalization we need static transform between /odom and /map -->
+    <node machine="pc2" if="$(arg sim)" pkg="tf" type="static_transform_publisher" name="sim_map_odom_broadcaster" args="0.0 0.0 0 0 0 0 /map /odom 100"/>
+
+    <!-- <node machine="pc2" pkg="tf" type="static_transform_publisher" name="base_footprint_to_base_link" args="0.0 0.0 0 0 0 0 /base_footprint /base_link 50"/> -->
+</launch> 
