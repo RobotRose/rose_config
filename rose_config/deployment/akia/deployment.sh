@@ -2,7 +2,7 @@
 export REPOS_LOCATION="git/rose"
 
 # Name a.k.a. serial number of the robot
-export ROBOT_NAME="bibi"
+export ROBOT_NAME="akia"
 
 # Installation
 export ROBOT_INSTALLATION="rose"
@@ -14,7 +14,7 @@ export ROBOT_MODEL="rose21"
 export ROBOT_LOCATION="rosebv"
 
 # Configuration
-export ROBOT_CONFIG="bibi"
+export ROBOT_CONFIG="akia"
 
 # Launch files
 export ROBOT_LAUNCH="rose21"
