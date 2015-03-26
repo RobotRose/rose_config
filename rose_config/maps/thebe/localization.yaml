@@ -1,4 +1,4 @@
-image: thebe8_localization.pgm
+image: localization.pgm
 resolution: 0.025000
 origin: [-5.000000, -27.50, 0.000000]
 negate: 0
