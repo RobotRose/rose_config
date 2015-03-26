@@ -23,3 +23,6 @@ following_timeout:          2000
 current_timeout:            100
 connection_timeout:         400
 abs_encoder_timeout:        75
+
+platform_controller_velocity_watchdog:
+    timeout: 0.5
