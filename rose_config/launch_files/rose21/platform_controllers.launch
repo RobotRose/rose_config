@@ -22,7 +22,7 @@
 
     <!-- Platform controller -->
     <node machine="pc2" pkg="rose21_platform_controller" type="rose21_platform_controller" name="platform_controller" output="screen" unless="$(arg sim)" >
-        <rosparam command="load" ns="platform_controller" file="$(env PARAM_DIR)/yaml/rose21_platform_controller.yaml"  />
+        <rosparam command="load" file="$(env PARAM_DIR)/yaml/rose21_platform_controller.yaml"  />
     </node>
 
     <!-- SIMULATION platform_controller -->
