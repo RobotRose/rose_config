@@ -3,6 +3,6 @@ export ROSINSTALL="okke"
 
 export ROS_VERSION="hydro"
 
-export ROS_IP="127.0.0.1"
+export ROS_INTERFACE="lo"
 
 export ROS_MASTER_URI="http://localhost:11311"
