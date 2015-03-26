@@ -5,7 +5,7 @@ export REPOS_LOCATION="git/rose"
 export ROBOT_NAME="rose"
 
 # Installation
-export ROBOT_INSTALLATION="operator"
+export ROBOT_INSTALLATION="rose"
 
 # Model
 export ROBOT_MODEL="rose21"
