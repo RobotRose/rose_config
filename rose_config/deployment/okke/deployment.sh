@@ -20,4 +20,4 @@ export ROBOT_CONFIG="rose"
 export ROBOT_LAUNCH="rose21"
 
 # Logging
-export ROBOT_LOGGING="default"
+export ROBOT_LOGGING="rose"

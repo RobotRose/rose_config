@@ -1,25 +1,25 @@
-serial_port: 	/dev/usb2serial/platform_controller
-baud_rate: 		115200
+serial_port:    /dev/usb2serial/platform_controller
+baud_rate:      115200
 
-drive_ki:					2000
-drive_k:					2000
-drive_kd:					-1000
-drive_kp:					0
-drive_i_limit:				5000000
-drive_scale_factor:			1000
-drive_following_err_max:	8
-drive_max_current:			5000
+drive_ki:                   2000
+drive_k:                    2000
+drive_kd:                   -1000
+drive_kp:                   0
+drive_i_limit:              5000000
+drive_scale_factor:         1000
+drive_following_err_max:    8
+drive_max_current:          5000
 
-steer_ki:					1000000
-steer_k:					400
-steer_kd:					0
-steer_kp:					0
-steer_i_limit:				10000000
-steer_scale_factor:			100
-steer_following_err_max:	6000
-steer_max_current:			6000
+steer_ki:                   1000000
+steer_k:                    400
+steer_kd:                   0
+steer_kp:                   0
+steer_i_limit:              10000000
+steer_scale_factor:         100
+steer_following_err_max:    6000
+steer_max_current:          6000
 
-following_timeout:			2000
-current_timeout:			100
-connection_timeout:			400
-abs_encoder_timeout:		75
+following_timeout:          2000
+current_timeout:            100
+connection_timeout:         400
+abs_encoder_timeout:        75

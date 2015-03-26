@@ -10,8 +10,8 @@
     
     <!-- Power controller -->
     <node machine="pc1" pkg="rose21_power_controller" type="rose21_power_controller" name="power_controller" output="screen" unless="$(arg sim)">
-	   <param name="serial_port" value="/dev/usb2serial/power_controller" />
-	   <param name="baudrate" value="115200" />
+       <param name="serial_port" value="/dev/usb2serial/power_controller" />
+       <param name="baudrate" value="115200" />
     </node>
 
     <!-- Move_base_smc node -->
@@ -22,17 +22,17 @@
 
     <!-- Platform controller -->
     <node machine="pc2" pkg="rose21_platform_controller" type="rose21_platform_controller" name="platform_controller" output="screen" unless="$(arg sim)" >
-        <rosparam command="load" ns="platform_controller" file="$(env ROBOT_PARAMETERS)/rose21_platform_controller.yaml"  />
+        <rosparam command="load" ns="platform_controller" file="$(env PARAM_DIR)/yaml/rose21_platform_controller.yaml"  />
     </node>
 
     <!-- SIMULATION platform_controller -->
     <node machine="pc2" pkg="rose20_gazebo_plugins" type="SimWheelController" name="SimWheelController" output="screen" if="$(arg sim)"/>
-  	
+    
     <!-- Platform transform -->
     <node machine="pc2" pkg="rose21_platform_tf" type="rose21_platform_tf" name="platform_tf" output="screen">
-        <env name="ROSCONSOLE_CONFIG_FILE" value="$(env ROBOT_PARAMETERS)/rosconsole.conf"/>
+        <env name="ROSCONSOLE_CONFIG_FILE" value="$(env LOGGING_CONF_DIR)/rosconsole_all.conf"/>
     </node>
-  	
+    
     <!-- Lift controller -->
     <node machine="pc2" pkg="rose21_lift_controller" type="rose21_lift_controller" name="lift_controller" output="screen" unless="$(arg sim)">
         <param name="serial_port" value="/dev/usb2serial/lift_controller" />
