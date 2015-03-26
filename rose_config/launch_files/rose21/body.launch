@@ -13,7 +13,7 @@
     <include file="$(find rose_machine_files)/machines/simulation.machine" if="$(arg sim)"/>
 
     <!-- Kinect -->
-    <include file="$(env ROBOT_LAUNCH)/kinect.launch" unless="$(arg sim)" />
+    <include file="$(env ROSE_LAUNCH)/kinect.launch" unless="$(arg sim)" />
     <include file="$(find ar_kinect_config)/launch/ar_track_alvar.launch" unless="$(arg sim)" />
 
     <!-- Arm controller -->
