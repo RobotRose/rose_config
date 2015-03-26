@@ -73,3 +73,9 @@
         uri:        'https://github.com/RobotRose/rose_qt_ui.git',
         version:    develop
     }
+- git: {
+        local-name: shared/src/opteq_wheelunits_01, 
+        uri:        'https://github.com/RobotRose/opteq_wheelunits_01.git',
+        version:    develop
+    }
+    
