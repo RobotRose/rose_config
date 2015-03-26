@@ -78,4 +78,14 @@
         uri:        'https://github.com/RobotRose/opteq_wheelunits_01.git',
         version:    develop
     }
+- git: {
+        local-name: rose/src/robai_arm_controller, 
+        uri:        'https://github.com/RobotRose/robai_arm_controller.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_operations, 
+        uri:        'https://github.com/RobotRose/rose_operations.git',
+        version:    develop
+    }
     
