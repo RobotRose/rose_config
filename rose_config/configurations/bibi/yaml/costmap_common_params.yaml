@@ -8,9 +8,6 @@ footprint_padding: 0.01
 
 transform_tolerance: 0.5
 
-
-
-
 # inflation_layer:
     # no properties
 
@@ -38,4 +35,3 @@ kinect_obstacle_layer:
 # Footprint clearing off
 kinect_obstacle_layer_footprint:
     enabled: false
-

@@ -13,4 +13,3 @@ global_costmap:
     # - {name: kinect_obstacle_layer, type: "costmap_2d::ObstacleLayer"}
     # - {name: simulation_obstacle_layer, type: "rose_costmap_2d_plugins::SimulationObstacleLayer"}
     - {name: inflation_layer,       type: "costmap_2d::InflationLayer"}
-
