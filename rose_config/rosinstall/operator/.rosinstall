@@ -1,75 +1,75 @@
 - git: {
         local-name: deployment/src/rose_tools, 
         uri:        'https://github.com/RobotRose/rose_tools.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: deployment/src/rose_config, 
         uri:        'https://github.com/RobotRose/rose_config.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_server_multiple_client, 
         uri:        'https://github.com/RobotRose/rose_server_multiple_client.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_luctor, 
         uri:        'https://github.com/RobotRose/rose_luctor.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_third_party, 
         uri:        'https://github.com/RobotRose/rose_third_party.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_datamanager, 
         uri:        'https://github.com/RobotRose/rose_datamanager.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_ui_messaging, 
         uri:        'https://github.com/RobotRose/rose_ui_messaging.git', 
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_utils, 
         uri:        'https://github.com/RobotRose/rose_utils.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: gui/src/rose_ui_support, 
         uri:        'https://github.com/RobotRose/rose_ui_support.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: gui/src/rose_joystick, 
         uri:        'https://github.com/RobotRose/rose_joystick.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: gui/src/rose_html5_ui, 
         uri:        'https://github.com/RobotRose/rose_html5_gui.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_msgs, 
         uri:        'https://github.com/RobotRose/rose_msgs.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/ros_clipper, 
         uri:        'https://github.com/RobotRose/ros_clipper.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_shared_variables, 
         uri:        'https://github.com/RobotRose/rose_shared_variables.git',
-        version:    master
+        version:    develop
     }
 - git: {
         local-name: gui/src/rose_gui_application, 
         uri:        'https://github.com/RobotRose/rose_qt_ui.git',
-        version:    master
+        version:    develop
     }
