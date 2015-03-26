@@ -28,7 +28,7 @@
 
 
      <!-- Start joint trajectory action controller -->
-    <rosparam file="$(env ROSE_LAUNCH)/arm_controllers/trajectory_controllers.yaml" command="load"/>
+    <rosparam file="$(env LAUNCH_DIR)/arm_controllers/trajectory_controllers.yaml" command="load"/>
     <node name="trajectory_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
           args="--manager=rose_arm_manager
                 --type=meta
@@ -43,7 +43,7 @@
           output="screen"/>
 
     <!-- Start upper and lower arm joint controllers -->
-    <rosparam file="$(env ROSE_LAUNCH)/arm_controllers/joints.yaml" command="load"/>
+    <rosparam file="$(env LAUNCH_DIR)/arm_controllers/joints.yaml" command="load"/>
     <node name="upper_arm_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
           args="--manager=rose_arm_manager
                 --port=rightArm

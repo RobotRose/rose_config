@@ -1,4 +1,4 @@
 <launch>
-    <rosparam file="$(env ROSE_LAUNCH)/neck_tf.yaml" command="load"/>
+    <rosparam file="$(env LAUNCH_DIR)/neck_tf.yaml" command="load"/>
     <node machine="pc1" pkg="rose21_neck_tf" type="rose21_neck_tf" name="neck_tf" output="screen"/>
 </launch>

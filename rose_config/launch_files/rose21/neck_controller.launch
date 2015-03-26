@@ -31,5 +31,5 @@
                 neck_pan_controller"
           output="screen"/>
 
-    <include file="$(env ROSE_LAUNCH)/neck.launch" /> 
+    <include file="$(env LAUNCH_DIR)/neck.launch" /> 
 </launch>

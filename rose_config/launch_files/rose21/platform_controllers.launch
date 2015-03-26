@@ -49,7 +49,7 @@
     <node  if="$(arg sim)" pkg="tf" type="static_transform_publisher" name="base_lift_broadcaster" args="0.2 0.0 0.55 0.0 0 0.0 /base_link /lift_link 100"/>
 
     <!-- Neck -->
-    <include file="$(env ROSE_LAUNCH)/neck_controller.launch" unless="$(arg sim)" >
+    <include file="$(env LAUNCH_DIR)/neck_controller.launch" unless="$(arg sim)" >
         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
