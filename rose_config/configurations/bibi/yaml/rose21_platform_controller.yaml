@@ -6,22 +6,22 @@ minor_version:  5
 control:
     drive:
         kp:                   0       # Velocity error to acceleration error factor
-        ki:                   2000    # Division factor, zero turns off!
-        kd:                   -1000   # Division factor, zero turns off!
-        k:                    2000
-        i_limit:              5000000
+        ki:                   2500    # Division factor, zero turns off!
+        kd:                   -750   # Division factor, zero turns off!
+        k:                    3000
+        i_limit:              30000
         scale_factor:         1000
         following_error_max:  8
         max_current:          5000
 
     steer:
         kp:                   0           # Not implemented for steer motors
-        ki:                   1000000     # Division factor, zero turns off!
+        ki:                   1000     # Division factor, zero turns off!
         kd:                   0           # Not implemented for steer motors
-        k:                    400         # Division factor, zero turns off!
-        i_limit:              10000000
-        scale_factor:         100
-        following_error_max:  6000
+        k:                    20        # Division factor, zero turns off!
+        i_limit:              30000
+        scale_factor:         10
+        following_error_max:  150
         max_current:          6000
 
 error:
