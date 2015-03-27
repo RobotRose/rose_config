@@ -1,28 +1,32 @@
 serial_port:    /dev/usb2serial/platform_controller
 baud_rate:      115200
 
-drive_kp:                   0       # Velocity error to acceleration error factor
-drive_ki:                   2000    # Division factor, zero turns off!
-drive_kd:                   -1000   # Division factor, zero turns off!
-drive_k:                    2000
-drive_i_limit:              5000000
-drive_scale_factor:         1000
-drive_following_err_max:    8
-drive_max_current:          5000
+control:
+    drive:
+        kp:                   0       # Velocity error to acceleration error factor
+        ki:                   2000    # Division factor, zero turns off!
+        kd:                   -1000   # Division factor, zero turns off!
+        k:                    2000
+        i_limit:              5000000
+        scale_factor:         1000
+        following_err_max:    8
+        max_current:          5000
 
-steer_kp:                   0           # Not implemented for steer motors
-steer_ki:                   1000000     # Division factor, zero turns off!
-steer_kd:                   0           # Not implemented for steer motors
-steer_k:                    400         # Division factor, zero turns off!
-steer_i_limit:              10000000
-steer_scale_factor:         100
-steer_following_err_max:    6000
-steer_max_current:          6000
+    steer:
+        kp:                   0           # Not implemented for steer motors
+        ki:                   1000000     # Division factor, zero turns off!
+        kd:                   0           # Not implemented for steer motors
+        k:                    400         # Division factor, zero turns off!
+        i_limit:              10000000
+        scale_factor:         100
+        following_err_max:    6000
+        max_current:          6000
 
-following_timeout:          2000
-current_timeout:            100
-connection_timeout:         400
-abs_encoder_timeout:        75
+error:
+    following_timeout:          2000
+    current_timeout:            100
+    connection_timeout:         400
+    abs_encoder_timeout:        75
 
 platform_controller_velocity_watchdog:
     timeout: 0.5
