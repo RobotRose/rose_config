@@ -11,9 +11,9 @@ drive_following_err_max:    8
 drive_max_current:          5000
 
 steer_kp:                   0           # Not implemented for steer motors
-steer_ki:                   1          # Division factor, zero turns off!
+steer_ki:                   0          # Division factor, zero turns off!
 steer_kd:                   0           # Not implemented for steer motors
-steer_k:                    400         # Division factor, zero turns off!
+steer_k:                    0         # Division factor, zero turns off!
 steer_i_limit:              10000000
 steer_scale_factor:         100
 steer_following_err_max:    10
