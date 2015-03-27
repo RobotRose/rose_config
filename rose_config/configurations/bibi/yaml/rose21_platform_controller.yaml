@@ -1,19 +1,19 @@
 serial_port:    /dev/usb2serial/platform_controller
 baud_rate:      115200
 
-drive_ki:                   2000
+drive_kp:                   0 		# Velocity error to acceleration error factor
+drive_ki:                   2000	# Division factor, zero turns off!
+drive_kd:                   -1000 	# Division factor, zero turns off!
 drive_k:                    2000
-drive_kd:                   -1000
-drive_kp:                   0
 drive_i_limit:              5000000
 drive_scale_factor:         1000
 drive_following_err_max:    8
 drive_max_current:          5000
 
-steer_ki:                   1000000
-steer_k:                    400
-steer_kd:                   0
-steer_kp:                   0
+steer_kp:                   0 			# Not implemented for steer motors
+steer_ki:                   1000000 	# Division factor, zero turns off!
+steer_kd:                   0 			# Not implemented for steer motors
+steer_k:                    400 		# Division factor, zero turns off!
 steer_i_limit:              10000000
 steer_scale_factor:         100
 steer_following_err_max:    6000
