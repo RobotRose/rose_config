@@ -8,6 +8,15 @@
     <!-- Hardware version -->
     <arg name="hardware" default="simulation"/>
 
+     <!-- Run the map server -->
+    <node machine="pc1" name="map_server_localization" pkg="map_server" type="map_server" args="$(env LOCALIZATION_MAP).yaml"/> 
+
+    <node machine="pc1" name="map_server_planner" pkg="map_server" type="map_server" args="$(env NAVIGATION_MAP).yaml"> 
+      <remap from="map" to="map_planner"/> 
+      <remap from="map_metadata" to="map_metadata_planner"/> 
+      <remap from="static_map" to="static_map_planner"/> 
+    </node> 
+
     <!-- Combine visual and wheel odomotry 
     <node machine="pc2" pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
         <param name="output_frame" value="/odom"/>
@@ -20,8 +29,6 @@
         <param name="self_diagnose" value="false"/>
     </node>-->
 
-    <include file="$(find rose_ed_config)/launch/ed.launch"/>
-    
     <!-- Run AMCL -->
     <node machine="pc2" name="amcl" pkg="amcl" type="amcl" output="screen" >
        <param name="odom_frame_id" value="/odom"/>
@@ -41,20 +48,20 @@
        <param name="laser_sigma_hit" value="0.1"/>
        <!-- <param name="recovery_alpha_slow" value="0.0001"/> -->
        <!--<param name="recovery_alpha_fast" value="0.001"/> -->
-       <param name="use_map_topic" value="true"/>
-       <param name="first_map_only" value="true"/>
+       <!-- <param name="use_map_topic" value="true"/> -->
+       <!-- <param name="first_map_only" value="true"/> -->
     </node>
   
     <node machine="pc2" pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
         <remap from="map" to="map_planner"/> 
-        <rosparam command="load" ns="global_costmap" file="$(env ROBOT_PARAMETERS)/costmap_common_params.yaml"     />
-        <rosparam command="load" ns="local_costmap" file="$(env ROBOT_PARAMETERS)/costmap_common_params.yaml"     />
+        <rosparam command="load" ns="global_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml"     />
+        <rosparam command="load" ns="local_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml"     />
 
-        <rosparam unless="$(arg sim)"  command="load" file="$(env ROBOT_PARAMETERS)/global_costmap_params.yaml" />
-        <rosparam if="$(arg sim)"      command="load" file="$(env ROBOT_PARAMETERS)/global_costmap_simulation_params.yaml" />
-        <rosparam unless="$(arg sim)"  command="load" file="$(env ROBOT_PARAMETERS)/local_costmap_params.yaml" />
-        <rosparam if="$(arg sim)"      command="load" file="$(env ROBOT_PARAMETERS)/local_costmap_simulation_params.yaml" />
-        <rosparam                      command="load" file="$(env ROBOT_PARAMETERS)/move_base_params.yaml" />
+        <rosparam unless="$(arg sim)"  command="load" file="$(env PARAM_DIR)/yaml/global_costmap_params.yaml" />
+        <rosparam if="$(arg sim)"      command="load" file="$(env PARAM_DIR)/yaml/global_costmap_simulation_params.yaml" />
+        <rosparam unless="$(arg sim)"  command="load" file="$(env PARAM_DIR)/yaml/local_costmap_params.yaml" />
+        <rosparam if="$(arg sim)"      command="load" file="$(env PARAM_DIR)/yaml/local_costmap_simulation_params.yaml" />
+        <rosparam                      command="load" file="$(env PARAM_DIR)/yaml/move_base_params.yaml" />
         <rosparam                      command="load" file="$(find rose_arc_local_planner)/config/rose_arc_local_planner.yaml"/>
 
         <param name="base_local_planner" value="rose_navigation/rose_arc_local_planner" />

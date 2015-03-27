@@ -13,28 +13,28 @@
     <include file="$(find rose_machine_files)/machines/simulation.machine" if="$(arg sim)"/>
 
     <!-- Laserscanner -->
-    <include file="$(env ROBOT_LAUNCH)/laser_scanner.launch" unless="$(arg sim)">
+    <include file="$(env LAUNCH_DIR)/laser_scanner.launch" unless="$(arg sim)">
         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>
 
     <!-- Platform controllers -->
-    <include file="$(env ROBOT_LAUNCH)/platform_controllers.launch">
+    <include file="$(env LAUNCH_DIR)/platform_controllers.launch">
         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>
 
     <!-- Navigation -->" 
-    <include file="$(env ROBOT_LAUNCH)/navigation.launch" unless="$(arg mapping)">
+    <include file="$(env LAUNCH_DIR)/navigation.launch" unless="$(arg mapping)">
         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>
 
     <!-- Mapping -->
-    <include file="$(env ROBOT_LAUNCH)/mapping.launch" if="$(arg mapping)"> 
+    <include file="$(env LAUNCH_DIR)/mapping.launch" if="$(arg mapping)"> 
         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>

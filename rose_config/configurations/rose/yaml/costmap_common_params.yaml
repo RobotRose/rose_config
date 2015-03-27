@@ -9,11 +9,6 @@ footprint_padding: 0.01
 transform_tolerance: 0.5
 
 
-
-
-# inflation_layer:
-    # no properties
-
 laser_obstacle_layer:
     observation_sources: laser_scan_sensor 
     laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true, min_obstacle_height: 0.0, max_obstacle_height: 2.1, observation_persistence: 5.0}

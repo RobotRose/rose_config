@@ -22,7 +22,7 @@
     </node>
 
     <!-- Start neck pan and tilt joint controllers -->
-    <rosparam command="load" file="$(env ROBOT_PARAMETERS)/neck_controller.yaml" />
+    <rosparam command="load" file="$(env PARAM_DIR)/yaml/neck_controller.yaml" />
     
     <node machine="pc2" name="neck_controller_spawner" pkg="dynamixel_controllers" type="controller_spawner.py"
           args="--manager=neck_dynamixel_manager
@@ -31,5 +31,5 @@
                 neck_pan_controller"
           output="screen"/>
 
-    <include file="$(env ROBOT_LAUNCH)/neck.launch" /> 
+    <include file="$(env LAUNCH_DIR)/neck.launch" /> 
 </launch>

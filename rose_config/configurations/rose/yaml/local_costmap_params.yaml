@@ -16,11 +16,3 @@ local_costmap:
     # - {name: kinect_obstacle_layer,   type: "costmap_2d::ObstacleLayer"}
     # - {name: simulation_obstacle_layer, type: "rose_costmap_2d_plugins::SimulationObstacleLayer"}
     # - {name: inflation_layer,           type: "costmap_2d::InflationLayer"}
-    - {name: ed_occupancy_grid,         type: "costmap_2d::StaticLayer"}
-
-# Ed World model layer
-ed_occupancy_grid:
-    map_topic: /ed/navigation/map
-    track_unknown_space: true
-    use_maximum: true
-    lethal_cost_threshold: 99
