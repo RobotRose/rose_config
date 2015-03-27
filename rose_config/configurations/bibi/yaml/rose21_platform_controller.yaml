@@ -1,5 +1,7 @@
 serial_port:    /dev/usb2serial/platform_controller
 baud_rate:      115200
+major_version:  2
+minor_version:  5
 
 control:
     drive:
