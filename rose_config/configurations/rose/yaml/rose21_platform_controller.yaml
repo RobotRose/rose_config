@@ -14,7 +14,7 @@ control:
 
     steer:
         kp:                   0           # Not implemented for steer motors
-        ki:                   400          # Division factor, zero turns off!
+        ki:                   1000000     # Division factor, zero turns off!
         kd:                   0           # Not implemented for steer motors
         k:                    400         # Division factor, zero turns off!
         i_limit:              10000000
