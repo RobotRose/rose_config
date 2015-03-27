@@ -16,7 +16,7 @@ steer_kd:                   0           # Not implemented for steer motors
 steer_k:                    400         # Division factor, zero turns off!
 steer_i_limit:              10000000
 steer_scale_factor:         100
-steer_following_err_max:    10
+steer_following_err_max:    11
 steer_max_current:          6000
 
 following_timeout:          2000
