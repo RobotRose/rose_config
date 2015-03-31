@@ -162,7 +162,7 @@
 - git: {
         local-name: tue/src/ed,
         uri:        'https://github.com/tue-robotics/ed.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/tue_filesystem,
@@ -187,7 +187,7 @@
 - git: {
         local-name: tue/src/ed_object_models,
         uri:        'https://github.com/tue-robotics/ed_object_models.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/tue_serialization,
@@ -207,15 +207,15 @@
 - git: {
         local-name: tue/src/ed_navigation,
         uri:        'https://github.com/tue-robotics/ed_navigation.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/ed_localization,
         uri:        'https://github.com/tue-robotics/ed_localization.git',
-        version:    rose/996_ed_for_nav
+        version:    rose/996_ed_for_nav_2
     }
 - git: {
         local-name: tue/src/ed_sensor_integration,
         uri:        'https://github.com/tue-robotics/ed_sensor_integration.git',
-        version:    master
+        version:    rose/996_ed_for_nav_2
     }
