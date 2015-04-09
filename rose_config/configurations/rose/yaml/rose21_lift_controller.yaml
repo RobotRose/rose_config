@@ -1,0 +1,10 @@
+serial_port:    /dev/usb2serial/lift_controller
+baud_rate:      115200
+major_version:  3
+minor_version:  3
+
+lift:
+   min_pos:     1995
+   max_pos:     2500
+   min_speed:   90      # [0-255]
+   max_speed:   220     # [0-255]
