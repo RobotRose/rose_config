@@ -1,10 +1,16 @@
 serial_port:    /dev/usb2serial/lift_controller
 baud_rate:      115200
-major_version:  3
-minor_version:  3
+major_version:  4
+minor_version:  0
 
 lift:
-   min_pos:     1995
-   max_pos:     2500
-   min_speed:   90      # [0-255]
-   max_speed:   220     # [0-255]
+   min_pos:     1995    # INT
+   max_pos:     2500    # INT
+   min_speed:   4       # INT [0-255]
+   max_speed:   150     # INT [0-255]
+   P:           0.15    # FLOAT
+   I:           0.001   # FLOAT
+   I_lim:       40      # INT
+   P_scale:     1000    # INT Measured position values are in range [min_pos-max_pos]
+   I_scale:     100000  # INT Measured position values are in range [min_pos-max_pos]
+   Hysteresis:  4       # INT
