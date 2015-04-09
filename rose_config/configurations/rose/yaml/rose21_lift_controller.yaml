@@ -4,13 +4,13 @@ major_version:  4
 minor_version:  0
 
 lift:
-   min_pos:     1995    # INT
+   min_pos:     1000    # INT
    max_pos:     2500    # INT
-   min_speed:   4       # INT [0-255]
-   max_speed:   150     # INT [0-255]
-   p:           0.15    # FLOAT
-   i:           0.001   # FLOAT
+   min_speed:   30      # INT [0-100]
+   max_speed:   100     # INT [0-100]
+   p:           0.150     # FLOAT
+   i:           0.0025  # FLOAT
    i_lim:       40      # INT
-   p_scale:     1000    # INT Measured position values are in range [min_pos-max_pos]
-   i_scale:     100000  # INT Measured position values are in range [min_pos-max_pos]
+   p_scale:     10000   # INT Measured position values are in range [min_pos-max_pos]
+   i_scale:     10000  # INT Measured position values are in range [min_pos-max_pos]
    hysteresis:  4       # INT
