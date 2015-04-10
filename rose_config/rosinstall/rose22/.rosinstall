@@ -81,7 +81,7 @@
 - git: {
         local-name: gui/src/rose_joystick, 
         uri:        'https://github.com/RobotRose/rose_joystick.git',
-        version:    1.0.0
+        version:    rose_joystick-1.0.0
     }
 - git: {
         local-name: gui/src/rose_html5_ui, 
