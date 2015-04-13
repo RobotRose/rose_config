@@ -175,6 +175,6 @@
     }
 - git: {
         local-name: development/src/mecon_scara, 
-        uri:        'github.com/RobotRose/mecon_scara.git',
+        uri:        'https://github.com/RobotRose/mecon_scara.git',
         version:    develop
     }
