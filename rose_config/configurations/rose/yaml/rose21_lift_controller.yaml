@@ -14,3 +14,4 @@ lift:
    p_scale:     1000    # INT Measured position values are in range [min_pos-max_pos]
    i_scale:     100000   # INT Measured position values are in range [min_pos-max_pos]
    hysteresis:  6       # INT
+   
