@@ -51,7 +51,7 @@
 - git: {
         local-name: rose/src/rose_operations, 
         uri:        'https://github.com/RobotRose/rose_operations.git',
-        version:    develop
+        version:    rose_operations-1.0.0
     }
 - git: {
         local-name: shared/src/rose_utils, 
