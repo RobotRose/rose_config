@@ -1,13 +1,13 @@
 serial_port:    /dev/usb2serial/lift_controller
 baud_rate:      115200
 major_version:  4
-minor_version:  1
+minor_version:  2
 
 lift:
    min_pos:     1000    # INT
    max_pos:     2500    # INT
-   min_speed:   30      # INT [0-100]
-   max_speed:   100     # INT [0-100]
+   min_speed:   5      # INT [0-100]
+   max_speed:   255     # INT [0-100]
    p:           0.150     # FLOAT
    i:           0.0025  # FLOAT
    i_lim:       40      # INT
