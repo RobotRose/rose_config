@@ -144,7 +144,7 @@
         version:    develop
     }
 - git: {
-        local-name: development/src/rose_arm_controller, 
+        local-name: rose/src/rose_arm_controller, 
         uri:        'https://github.com/RobotRose/rose_arm_controller.git',
         version:    requirement/1270_create_path_planning_for_kinova
     }
