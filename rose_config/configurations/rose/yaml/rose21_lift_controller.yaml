@@ -18,6 +18,7 @@ lift:
    top_link:            body_base_link # Link name as in robot model
    length:              0.370          # [m] Length of the lift, thus distance between base_link and top_link
    arm_length:          0.118338       # [m] Length of the arm attached to the lift joint, the point around which the the lift rotates, and the motor
-   motor_lift_distance: 0.470          # [m] Distance between base_link and the attachment point of the motor (the one the arm is not attached to)
+   motor_lift_distance: 0.470          # [m] Distance between base_link and the attachment point of the back of the motor (the one the arm is not attached to)
+   motor_base_length:   0.345          # [m] Length of static part the motor (From the motor attachment to the start of the 'piston') thus the part that does not change in length
    arm_lift_angle:      1.74532925     # [rad] Angle between the arm of the lift (the part attached to the lift joint, the point around which the the lift rotates, and the motor) and the lift itself (the line from base_link to top_link)
-   pos_length_factor:   10.0           # Factor relating the sensor position of the motor to its length as in length = sensor_pos/pos_length_factor
+   pos_length_factor:   27822.22       # Factor relating the sensor position of the motor to its length in meters as in length = sensor_pos/pos_length_factor
