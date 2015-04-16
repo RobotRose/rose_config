@@ -18,9 +18,9 @@
 
     <!-- Arm controller -->
     <include file="$(find arm_controller)/launch/arms.launch">
-        <arg name="mapping"     value="$(arg mapping)"/>
+<!--         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
-        <arg name="hardware"    value="$(arg hardware)"/>
+        <arg name="hardware"    value="$(arg hardware)"/> -->
     </include>
 
     <!-- Operation manager -->
