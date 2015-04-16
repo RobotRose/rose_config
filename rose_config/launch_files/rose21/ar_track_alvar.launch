@@ -1,0 +1,17 @@
+<launch>
+	<arg name="marker_size" default="5.6" />
+	<arg name="max_new_marker_error" default="0.08" /> <!-- 0.08 -->
+	<arg name="max_track_error" default="0.2" />       <!-- 0.2 -->
+
+	<arg name="cam_image_topic" default="/camera/rgb/image_color" />
+	<arg name="cam_info_topic" default="/camera/rgb/camera_info" />
+	<arg name="output_frame" default="/camera_depth_optical_frame" />
+
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame)" />
+
+	<!--<node pkg="tf" type="static_transform_publisher" name="right_gripper_marker_tf" args="0.075 0 0.075 3.1415 0 3.1415 /right_arm_wrist /right_arm_grippermarker_expected 10" />
+<node pkg="tf" type="static_transform_publisher" name="left_gripper_marker_tf" args="0.075 0 0.075 3.1415 0 3.1415 /left_arm_wrist /left_arm_grippermarker_expected 10" />-->
+
+	<node pkg="tf" type="static_transform_publisher" name="ar_marker_2_rename" args="0 0 0 0 0 0 /ar_marker_2 /left_arm_grippermarker_observed 10" />
+	<node pkg="tf" type="static_transform_publisher" name="ar_marker_2_gripper" args="0.10 0 -0.065 0 0 0 /left_arm_grippermarker_observed /left_arm_observed_gripper_tip 10" />
+</launch>

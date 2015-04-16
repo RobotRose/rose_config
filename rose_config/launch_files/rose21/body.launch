@@ -14,7 +14,7 @@
 
     <!-- Kinect -->
     <include file="$(env LAUNCH_DIR)/kinect.launch" unless="$(arg sim)" />
-    <include file="$(find ar_kinect_config)/launch/ar_track_alvar.launch" unless="$(arg sim)" />
+    <include file="$(env LAUNCH_DIR)/ar_track_alvar.launch" unless="$(arg sim)" />
 
     <!-- Arm controller -->
     <include file="$(find arm_controller)/launch/arm_controller.launch">
