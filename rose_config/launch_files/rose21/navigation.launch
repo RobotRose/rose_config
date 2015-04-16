@@ -29,9 +29,6 @@
         <param name="self_diagnose" value="false"/>
     </node>-->
 
-
-    <include file="$(find rose_ed_config)/launch/ed.launch"/>
-
     <!-- Run AMCL -->
     <node machine="pc2" name="amcl" pkg="amcl" type="amcl" output="screen" >
        <param name="odom_frame_id" value="/odom"/>

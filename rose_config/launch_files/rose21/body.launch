@@ -56,4 +56,6 @@
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>
 
+    <!-- Worldmodel / Environment Descriptor -->
+    <include file="$(find rose_ed_config)/launch/ed.launch"/>
 </launch>
