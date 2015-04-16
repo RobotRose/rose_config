@@ -172,60 +172,60 @@
 - git: {
         local-name: tue/src/ed,
         uri:        'https://github.com/tue-robotics/ed.git',
-        version:    rose/996_ed_for_nav_2
+        version:    9b033e49e5c4
     }
 - git: {
         local-name: tue/src/tue_filesystem,
         uri:        'https://github.com/tue-robotics/tue_filesystem',
-        version:    master
+        version:    bf8c9d190d5c
     }
 - git: {
         local-name: tue/src/geolib2,
         uri:        'https://github.com/tue-robotics/geolib2',
-        version:    master
+        version:    d15b0f71668a
     }
 - git: {
         local-name: tue/src/code_profiler,
         uri:        'https://github.com/tue-robotics/code_profiler',
-        version:    master
+        version:    248eea58ac6c
     }
 - git: {
         local-name: tue/src/tue_config,
         uri:        'https://github.com/tue-robotics/tue_config.git',
-        version:    master
+        version:    b80a7c737cfa
     }
 - git: {
         local-name: tue/src/ed_object_models,
         uri:        'https://github.com/tue-robotics/ed_object_models.git',
-        version:    rose/996_ed_for_nav_2
+        version:    b0c123869ab1
     }
 - git: {
         local-name: tue/src/tue_serialization,
         uri:        'https://github.com/tue-robotics/tue_serialization',
-        version:    master
+        version:    7be29607ce74
     }
 - git: {
         local-name: tue/src/rgbd,
         uri:        'https://github.com/tue-robotics/rgbd',
-        version:    master
+        version:    47ef61da61de
     }
 - git: {
         local-name: tue/src/ed_gui_server,
         uri:        'https://github.com/tue-robotics/ed_gui_server.git',
-        version:    master
+        version:    54646ecc7f48
     }
 - git: {
         local-name: tue/src/ed_navigation,
         uri:        'https://github.com/tue-robotics/ed_navigation.git',
-        version:    rose/996_ed_for_nav_2
+        version:    992c7cdb550a
     }
 - git: {
         local-name: tue/src/ed_localization,
         uri:        'https://github.com/tue-robotics/ed_localization.git',
-        version:    rose/996_ed_for_nav_2
+        version:    ddbef80f7056
     }
 - git: {
         local-name: tue/src/ed_sensor_integration,
         uri:        'https://github.com/tue-robotics/ed_sensor_integration.git',
-        version:    rose/996_ed_for_nav_2
+        version:    c93d4761b67d
     }
