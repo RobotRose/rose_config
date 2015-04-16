@@ -154,7 +154,7 @@
 #         version:    develop
 #     }
 - git: {
-        local-name: platform/src/dynamixel_joint_state_publisher, 
+        local-name: rose/src/dynamixel_joint_state_publisher, 
         uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
         version:    master
     }
