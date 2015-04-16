@@ -71,7 +71,7 @@
 - git: {
         local-name: gui/src/rose_ui_support, 
         uri:        'https://github.com/RobotRose/rose_ui_support.git',
-        version:    develop
+        version:    rose_ui_support-1.0.0
     }
 - git: {
         local-name: firmware, 
