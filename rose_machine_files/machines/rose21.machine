@@ -4,6 +4,7 @@
 		address="rosepc1" 
 		default="never" 
 		user="rose" 
+		timeout="120.0"
 		env-loader="/usr/bin/setup_machine_env.sh"/>
 
 	<machine 
@@ -11,6 +12,7 @@
 		address="rosepc2" 
 		default="never" 
 		user="rose" 
+		timeout="120.0"
 		env-loader="/usr/bin/setup_machine_env.sh"/>
 </launch>
 

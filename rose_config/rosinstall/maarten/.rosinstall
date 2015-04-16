@@ -6,7 +6,7 @@
 - git: {
         local-name: deployment/src/rose_config, 
         uri:        'https://github.com/RobotRose/rose_config.git', 
-        version:    requirement/996_ed_for_nav
+        version:    develop
     }
 - git: {
         local-name: rose/src/rose_watchdogs, 
@@ -96,7 +96,7 @@
 - git: {
         local-name: rose/src/rose21_description, 
         uri:        'https://github.com/RobotRose/rose21_description.git',
-        version:    requirement/996_ed_for_nav
+        version:    develop
     }
 - git: {
         local-name: shared/src/rose_msgs, 
@@ -141,7 +141,7 @@
 - git: {
         local-name: rose/src/rose_perception, 
         uri:        'https://github.com/RobotRose/rose_perception.git',
-        version:    requirement/996_ed_for_nav
+        version:    develop
     }
 - git: {
         local-name: rose/src/robai_arm_controller, 
