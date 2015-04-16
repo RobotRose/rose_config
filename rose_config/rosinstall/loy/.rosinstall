@@ -164,7 +164,7 @@
         version:    develop
     }
 - git: {
-        local-name: development/src/rail_manipulation_msgs, 
+        local-name: rose/src/rail_manipulation_msgs, 
         uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
         version:    master
     }
