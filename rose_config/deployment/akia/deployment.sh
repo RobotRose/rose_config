@@ -4,6 +4,9 @@ export REPOS_LOCATION="git/rose"
 # Name a.k.a. serial number of the robot
 export ROBOT_NAME="akia"
 
+# Deployment
+export ROBOT_DEPLOYMENT="akia"
+
 # Installation
 export ROBOT_INSTALLATION="rose30"
 
