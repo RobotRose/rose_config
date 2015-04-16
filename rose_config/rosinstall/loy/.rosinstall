@@ -168,6 +168,11 @@
         uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/rose_arm_controller, 
+        uri:        'https://github.com/RobotRose/rose_arm_controller.git',
+        version:    requirement/1270_create_path_planning_for_kinova
+    }
 ########### Install TU/e's ED 3D world model system
 - git: {
         local-name: tue/src/ed,
