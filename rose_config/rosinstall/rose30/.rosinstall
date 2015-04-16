@@ -172,7 +172,7 @@
 - git: {
         local-name: tue/src/ed,
         uri:        'https://github.com/tue-robotics/ed.git',
-        version:    9b033e49e5c4
+        version:    18a2552ac5d3
     }
 - git: {
         local-name: tue/src/tue_filesystem,
