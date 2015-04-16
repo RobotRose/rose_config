@@ -158,6 +158,16 @@
         uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/wpi_jaco, 
+        uri:        'https://github.com/RobotRose/wpi_jaco.git',
+        version:    develop
+    }
+- git: {
+        local-name: development/src/rail_manipulation_msgs, 
+        uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
+        version:    master
+    }
 ########### Install TU/e's ED 3D world model system
 - git: {
         local-name: tue/src/ed,
