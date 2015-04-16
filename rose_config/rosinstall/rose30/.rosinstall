@@ -176,17 +176,17 @@
     }
 - git: {
         local-name: tue/src/tue_filesystem,
-        uri:        'https://github.com/tue-robotics/tue_filesystem',
+        uri:        'https://github.com/tue-robotics/tue_filesystem.git',
         version:    bf8c9d190d5c
     }
 - git: {
         local-name: tue/src/geolib2,
-        uri:        'https://github.com/tue-robotics/geolib2',
+        uri:        'https://github.com/tue-robotics/geolib2.git',
         version:    d15b0f71668a
     }
 - git: {
         local-name: tue/src/code_profiler,
-        uri:        'https://github.com/tue-robotics/code_profiler',
+        uri:        'https://github.com/tue-robotics/code_profiler.git',
         version:    248eea58ac6c
     }
 - git: {
@@ -201,12 +201,12 @@
     }
 - git: {
         local-name: tue/src/tue_serialization,
-        uri:        'https://github.com/tue-robotics/tue_serialization',
+        uri:        'https://github.com/tue-robotics/tue_serialization.git',
         version:    7be29607ce74
     }
 - git: {
         local-name: tue/src/rgbd,
-        uri:        'https://github.com/tue-robotics/rgbd',
+        uri:        'https://github.com/tue-robotics/rgbd.git',
         version:    47ef61da61de
     }
 - git: {
