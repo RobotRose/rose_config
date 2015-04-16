@@ -1,5 +1,5 @@
 # Rosinstall 
-export ROSINSTALL="rose"
+export ROSINSTALL="rose30"
 
 export ROS_VERSION="hydro"
 

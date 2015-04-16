@@ -13,7 +13,7 @@
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
         version:    develop
     }
-#- git: {
+# - git: {
 #        local-name: rose/src/rose_odometry, 
 #        uri:        'https://github.com/RobotRose/rose_odometry.git', 
 #        version:    develop
@@ -38,21 +38,21 @@
         uri:        'https://github.com/RobotRose/rose_datamanager.git', 
         version:    develop
     }
-# - git: {
-#         local-name: rose/src/navigation, 
-#         uri:        'https://github.com/ros-planning/navigation.git',
-#         version:    hydro-devel
-#     }
-# - git: {
-#         local-name: shared/src/rose_ui_messaging, 
-#         uri:        'https://github.com/RobotRose/rose_ui_messaging.git', 
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose_operations, 
-#         uri:        'https://github.com/RobotRose/rose_operations.git',
-#         version:    develop
-#     }
+- git: {
+        local-name: rose/src/navigation, 
+        uri:        'https://github.com/ros-planning/navigation.git',
+        version:    hydro-devel
+    }
+- git: {
+        local-name: shared/src/rose_ui_messaging, 
+        uri:        'https://github.com/RobotRose/rose_ui_messaging.git', 
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_operations, 
+        uri:        'https://github.com/RobotRose/rose_operations.git',
+        version:    requirement/1272_new_poses_for_arm_controller
+    }
 - git: {
         local-name: shared/src/rose_utils, 
         uri:        'https://github.com/RobotRose/rose_utils.git',
@@ -63,95 +63,95 @@
         uri:        'https://github.com/RobotRose/opteq_wheelunits_01.git',
         version:    develop
     }
-# - git: {
-#         local-name: rose/src/rose_gaze_controller, 
-#         uri:        'https://github.com/RobotRose/rose_gaze_controller.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: gui/src/rose_ui_support, 
-#         uri:        'https://github.com/RobotRose/rose_ui_support.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: firmware, 
-#         uri:        'https://github.com/RobotRose/rose21_firmware.git',
-#         version:    develop
-#     }
+- git: {
+        local-name: rose/src/rose_gaze_controller, 
+        uri:        'https://github.com/RobotRose/rose_gaze_controller.git',
+        version:    develop
+    }
+- git: {
+        local-name: gui/src/rose_ui_support, 
+        uri:        'https://github.com/RobotRose/rose_ui_support.git',
+        version:    develop
+    }
+- git: {
+        local-name: firmware, 
+        uri:        'https://github.com/RobotRose/rose21_firmware.git',
+        version:    develop
+    }
 - git: {
         local-name: gui/src/rose_joystick, 
         uri:        'https://github.com/RobotRose/rose_joystick.git',
-        version:    requirement/1231_control_mico
+        version:    requirement/1268_prepare_joystick_controller_for_mico
     }
-# - git: {
-#         local-name: gui/src/rose_html5_ui, 
-#         uri:        'https://github.com/RobotRose/rose_html5_gui.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose_system_validation, 
-#         uri:        'https://github.com/RobotRose/rose_system_validation.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose21_description, 
-#         uri:        'https://github.com/RobotRose/rose21_description.git',
-#         version:    develop
-#     }
+- git: {
+        local-name: gui/src/rose_html5_ui, 
+        uri:        'https://github.com/RobotRose/rose_html5_gui.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_system_validation, 
+        uri:        'https://github.com/RobotRose/rose_system_validation.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose21_description, 
+        uri:        'https://github.com/RobotRose/rose21_description.git',
+        version:    develop
+    }
 - git: {
         local-name: shared/src/rose_msgs, 
         uri:        'https://github.com/RobotRose/rose_msgs.git',
         version:    develop
     }
-# - git: {
-#         local-name: rose/src/rose_hardware_interface, 
-#         uri:        'https://github.com/RobotRose/rose_hardware_interface.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose21_drivers, 
-#         uri:        'https://github.com/RobotRose/rose21_drivers.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose_navigation, 
-#         uri:        'https://github.com/RobotRose/rose_navigation.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: shared/src/ros_clipper, 
-#         uri:        'https://github.com/RobotRose/ros_clipper.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose21_base, 
-#         uri:        'https://github.com/RobotRose/rose21_base.git',
-#         version:    develop
-#     }
+- git: {
+        local-name: rose/src/rose_hardware_interface, 
+        uri:        'https://github.com/RobotRose/rose_hardware_interface.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose21_drivers, 
+        uri:        'https://github.com/RobotRose/rose21_drivers.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_navigation, 
+        uri:        'https://github.com/RobotRose/rose_navigation.git',
+        version:    develop
+    }
+- git: {
+        local-name: shared/src/ros_clipper, 
+        uri:        'https://github.com/RobotRose/ros_clipper.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose21_base, 
+        uri:        'https://github.com/RobotRose/rose21_base.git',
+        version:    develop
+    }
 - git: {
         local-name: shared/src/rose_shared_variables, 
         uri:        'https://github.com/RobotRose/rose_shared_variables.git',
         version:    develop
    }
-# - git: {
-#         local-name: gui/src/rose_gui_application, 
-#         uri:        'https://github.com/RobotRose/rose_qt_ui.git',
-#         version:    develop
-#     }
-# - git: {
-#         local-name: rose/src/rose_perception, 
-#         uri:        'https://github.com/RobotRose/rose_perception.git',
-#         version:    develop
-#     }
 - git: {
-        local-name: development/src/rose_arm_controller, 
+        local-name: gui/src/rose_gui_application, 
+        uri:        'https://github.com/RobotRose/rose_qt_ui.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_perception, 
+        uri:        'https://github.com/RobotRose/rose_perception.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rose_arm_controller, 
         uri:        'https://github.com/RobotRose/rose_arm_controller.git',
-        version:    bug/fix_for_new_smc
+        version:    requirement/1270_create_path_planning_for_kinova
     }
 - git: {
         local-name: development/src/wpi_jaco, 
         uri:        'https://github.com/RobotRose/wpi_jaco.git',
-        version:    configurable_parameters_for_mico
+        version:    develop
     }
 - git: {
         local-name: development/src/lcsr_tf_tools, 
@@ -167,4 +167,14 @@
         local-name: development/src/rail_manipulation_msgs, 
         uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
         version:    master
-    }            
+    }
+- git: {
+        local-name: testing/src/rose_mico_testing, 
+        uri:        'https://github.com/RobotRose/rose_mico_testing.git',
+        version:    develop
+    }
+- git: {
+        local-name: development/src/mecon_scara, 
+        uri:        'https://github.com/RobotRose/mecon_scara.git',
+        version:    develop
+    }
