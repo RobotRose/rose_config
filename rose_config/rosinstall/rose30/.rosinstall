@@ -51,7 +51,7 @@
 - git: {
         local-name: rose/src/rose_operations, 
         uri:        'https://github.com/RobotRose/rose_operations.git',
-        version:    develop
+        version:    requirement/1272_new_poses_for_arm_controller
     }
 - git: {
         local-name: shared/src/rose_utils, 
