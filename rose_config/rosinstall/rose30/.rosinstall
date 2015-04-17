@@ -172,7 +172,7 @@
 - git: {
         local-name: tue/src/ed,
         uri:        'https://github.com/tue-robotics/ed.git',
-        version:    18a2552ac5d3
+        version:    debug/self_filter
     }
 - git: {
         local-name: tue/src/tue_filesystem,
@@ -197,7 +197,7 @@
 - git: {
         local-name: tue/src/ed_object_models,
         uri:        'https://github.com/tue-robotics/ed_object_models.git',
-        version:    b0c123869ab1
+        version:    master
     }
 - git: {
         local-name: tue/src/tue_serialization,
@@ -227,5 +227,5 @@
 - git: {
         local-name: tue/src/ed_sensor_integration,
         uri:        'https://github.com/tue-robotics/ed_sensor_integration.git',
-        version:    c93d4761b67d
+        version:    debug/self_filter
     }
