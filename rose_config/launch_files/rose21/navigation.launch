@@ -8,15 +8,6 @@
     <!-- Hardware version -->
     <arg name="hardware" default="simulation"/>
 
-     <!-- Run the map server -->
-    <node machine="pc1" name="map_server_localization" pkg="map_server" type="map_server" args="$(env LOCALIZATION_MAP)"/> 
-
-    <node machine="pc1" name="map_server_planner" pkg="map_server" type="map_server" args="$(env NAVIGATION_MAP)"> 
-      <remap from="map" to="map_planner"/> 
-      <remap from="map_metadata" to="map_metadata_planner"/> 
-      <remap from="static_map" to="static_map_planner"/> 
-    </node> 
-
     <!-- Combine visual and wheel odomotry 
     <node machine="pc2" pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
         <param name="output_frame" value="/odom"/>
