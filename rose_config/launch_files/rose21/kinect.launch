@@ -18,6 +18,7 @@
         <arg name="sw_registered_processing" value="false"/> 
         <arg name="camera" value="$(arg kinect_camera_name)" />
         <arg name="tf_prefix" default="rose" />
+        <arg name="publish_tf" default="false" />
     </include>
 
     <param name="/$(arg kinect_camera_name)/driver/image_mode" value="2" /> <!-- NO LOW RESOLUTION -->
