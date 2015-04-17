@@ -17,7 +17,7 @@
     <include file="$(env LAUNCH_DIR)/ar_track_alvar.launch" unless="$(arg sim)" />
 
     <!-- Arm controller -->
-    <include file="$(find arm_controller)/launch/arms.launch">
+    <include file="$(find arm_controller)/launch/arms_moveit.launch">
 <!--         <arg name="mapping"     value="$(arg mapping)"/>
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/> -->
@@ -55,4 +55,7 @@
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>
+
+    <!-- Worldmodel / Environment Descriptor -->
+    <include file="$(find rose_ed_config)/launch/ed.launch"/>
 </launch>
