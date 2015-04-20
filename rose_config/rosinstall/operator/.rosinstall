@@ -94,8 +94,3 @@
         uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
         version:    develop
     }
-- git: {
-        local-name: rose/src/kinect_description, 
-        uri:        'https://github.com/RobotRose/kinect_description.git',
-        version:    master
-    }
