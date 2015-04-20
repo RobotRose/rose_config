@@ -178,3 +178,8 @@
         uri:        'https://github.com/RobotRose/mecon_scara.git',
         version:    develop
     }
+- git: {
+        local-name: rose/src/dynamixel_joint_state_publisher, 
+        uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
+        version:    develop
+    }
