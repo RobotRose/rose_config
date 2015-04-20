@@ -15,9 +15,5 @@
   		<param name="cluster" value="1"/>
   		<param name="skip" value="0"/>
   	</node>
-
-  	<node machine="pc2" pkg="rose21_laser_tf" type="rose21_laser_tf" name="laser_tf" output="screen" />
-
-  	<!-- Run Laser Filter for clearing -->
-    <node machine="pc2" pkg="rose_laser_filter" type="rose_laser_filter" name="rose_laser_filter" /> 
+    
 </launch>

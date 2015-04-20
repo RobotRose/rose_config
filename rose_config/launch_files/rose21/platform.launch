@@ -39,4 +39,8 @@
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>  
+
+    <!-- TF --> 
+    <include file="$(find rose21_urdf)/launch/state_publisher.launch">
+
 </launch>

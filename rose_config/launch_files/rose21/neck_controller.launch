@@ -30,6 +30,4 @@
                 neck_tilt_controller
                 neck_pan_controller"
           output="screen"/>
-
-    <include file="$(env LAUNCH_DIR)/neck.launch" /> 
 </launch>
