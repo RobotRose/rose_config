@@ -41,6 +41,6 @@
     </include>  
 
     <!-- TF --> 
-    <include file="$(find rose21_urdf)/launch/state_publisher.launch">
+    <include file="$(env LAUNCH_DIR)/robot_state.launch">
 
 </launch>
