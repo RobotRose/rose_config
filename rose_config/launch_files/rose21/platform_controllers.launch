@@ -28,7 +28,7 @@
     <!-- SIMULATION platform_controller -->
     <node machine="pc2" pkg="rose20_gazebo_plugins" type="SimWheelController" name="SimWheelController" output="screen" if="$(arg sim)"/>
     
-    <!-- Platform transform -->
+    <!-- Platform transform  - odometry - -->
     <node machine="pc2" pkg="rose21_platform_tf" type="rose21_platform_tf" name="platform_tf" output="screen">
         <env name="ROSCONSOLE_CONFIG_FILE" value="$(env LOGGING_CONF_DIR)/rosconsole_all.conf"/>
     </node>
@@ -37,15 +37,6 @@
     <node machine="pc2" pkg="rose21_lift_controller" type="rose21_lift_controller" name="lift_controller" output="screen" unless="$(arg sim)">
         <rosparam command="load" file="$(env PARAM_DIR)/yaml/rose21_lift_controller.yaml"/>
     </node>
-
-    <!-- Lift transform -->
-    <node machine="pc2" pkg="rose21_lift_tf" type="rose21_lift_tf" name="lift_tf" output="screen" unless="$(arg sim)"/>
-
-    <!-- Arm transform -->
-    <node machine="pc1" pkg="rose21_arm_tf" type="rose21_arm_tf" name="arm_tf" output="screen" unless="$(arg sim)"/>
-
-    <!-- SIMULATION Lift transform -->
-    <node  if="$(arg sim)" pkg="tf" type="static_transform_publisher" name="base_lift_broadcaster" args="0.2 0.0 0.55 0.0 0 0.0 /base_link /lift_link 100"/>
 
     <!-- Neck -->
     <include file="$(env LAUNCH_DIR)/neck_controller.launch" unless="$(arg sim)" >
