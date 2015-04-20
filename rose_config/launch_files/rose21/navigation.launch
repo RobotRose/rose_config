@@ -75,5 +75,4 @@
     <!-- For sim/fakelocalization we need static transform between /odom and /map -->
     <node machine="pc2" if="$(arg sim)" pkg="tf" type="static_transform_publisher" name="sim_map_odom_broadcaster" args="0.0 0.0 0 0 0 0 /map /odom 100"/>
 
-    <!-- <node machine="pc2" pkg="tf" type="static_transform_publisher" name="base_footprint_to_base_link" args="0.0 0.0 0 0 0 0 /base_footprint /base_link 50"/> -->
 </launch> 

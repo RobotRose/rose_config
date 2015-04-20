@@ -39,4 +39,8 @@
         <arg name="sim"         value="$(arg sim)"/>
         <arg name="hardware"    value="$(arg hardware)"/>
     </include>  
+
+    <!-- TF --> 
+    <include file="$(env LAUNCH_DIR)/robot_state.launch"/>
+
 </launch>
