@@ -148,7 +148,16 @@
 #         uri:        'https://github.com/RobotRose/rose_simulator.git',
 #         version:    develop
 #     }
-
+- git: {
+        local-name: rose/src/dynamixel_joint_state_publisher, 
+        uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
+        version:    master
+    }
+- git: {
+        local-name: rose/src/kinect_description, 
+        uri:        'https://github.com/RobotRose/kinect_description.git',
+        version:    master
+    }
 ########### Install TU/e's ED 3D world model system
 # - git: {
 #         local-name: tue/src/ed,
