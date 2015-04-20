@@ -214,3 +214,8 @@
         uri:        'https://github.com/tue-robotics/ed_localization.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/kinect_description, 
+        uri:        'https://github.com/RobotRose/kinect_description.git',
+        version:    master
+    }
