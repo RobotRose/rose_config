@@ -9,12 +9,12 @@
         version:    develop
     }
 - git: {
-        local-name: platform/src/rose_watchdogs, 
+        local-name: rose/src/rose_watchdogs, 
         uri:        'https://github.com/RobotRose/rose_watchdogs.git', 
         version:    develop
     }
 #- git: {
-#        local-name: platform/src/rose_odometry, 
+#        local-name: rose/src/rose_odometry, 
 #        uri:        'https://github.com/RobotRose/rose_odometry.git', 
 #        version:    develop
 #    }
@@ -29,7 +29,7 @@
         version:    develop
     }
 - git: {
-        local-name: third_party/src/rose_third_party, 
+        local-name: shared/src/rose_third_party, 
         uri:        'https://github.com/RobotRose/rose_third_party.git', 
         version:    develop
     }
@@ -39,7 +39,7 @@
         version:    develop
     }
 - git: {
-        local-name: platform/src/navigation, 
+        local-name: rose/src/navigation, 
         uri:        'https://github.com/ros-planning/navigation.git',
         version:    hydro-devel
     }
@@ -64,14 +64,14 @@
         version:    develop
     }
 - git: {
-        local-name: gaze_controller/src/rose_gaze_controller, 
+        local-name: rose/src/rose_gaze_controller, 
         uri:        'https://github.com/RobotRose/rose_gaze_controller.git',
         version:    develop
     }
 - git: {
         local-name: gui/src/rose_ui_support, 
         uri:        'https://github.com/RobotRose/rose_ui_support.git',
-        version:    develop
+        version:    requirement/1272_for_the_new_arm_controller
     }
 - git: {
         local-name: firmware, 
@@ -89,12 +89,12 @@
         version:    develop
     }
 - git: {
-        local-name: tools/src/rose_system_validation, 
+        local-name: rose/src/rose_system_validation, 
         uri:        'https://github.com/RobotRose/rose_system_validation.git',
         version:    develop
     }
 - git: {
-        local-name: description/src/rose21_description, 
+        local-name: rose/src/rose21_description, 
         uri:        'https://github.com/RobotRose/rose21_description.git',
         version:    develop
     }
@@ -104,27 +104,27 @@
         version:    develop
     }
 - git: {
-        local-name: platform/src/rose_hardware_interface, 
+        local-name: rose/src/rose_hardware_interface, 
         uri:        'https://github.com/RobotRose/rose_hardware_interface.git',
         version:    develop
     }
 - git: {
-        local-name: platform/src/rose21_drivers, 
+        local-name: rose/src/rose21_drivers, 
         uri:        'https://github.com/RobotRose/rose21_drivers.git',
         version:    develop
     }
 - git: {
-        local-name: platform/src/rose_navigation, 
+        local-name: rose/src/rose_navigation, 
         uri:        'https://github.com/RobotRose/rose_navigation.git',
         version:    develop
     }
 - git: {
-        local-name: third_party/src/ros_clipper, 
+        local-name: shared/src/ros_clipper, 
         uri:        'https://github.com/RobotRose/ros_clipper.git',
         version:    develop
     }
 - git: {
-        local-name: platform/src/rose21_base, 
+        local-name: rose/src/rose21_base, 
         uri:        'https://github.com/RobotRose/rose21_base.git',
         version:    develop
     }
@@ -143,18 +143,89 @@
         uri:        'https://github.com/RobotRose/rose_perception.git',
         version:    develop
     }
-- git: {
-        local-name: arms/src/robai_arm_controller, 
-        uri:        'https://github.com/RobotRose/robai_arm_controller.git',
-        version:    develop
-    }
 # - git: {
 #         local-name: simulator/src, 
 #         uri:        'https://github.com/RobotRose/rose_simulator.git',
 #         version:    develop
 #     }
 - git: {
-        local-name: platform/src/dynamixel_joint_state_publisher, 
+        local-name: rose/src/dynamixel_joint_state_publisher, 
         uri:        'https://github.com/RobotRose/dynamixel_joint_state_publisher.git',
         version:    master
     }
+- git: {
+        local-name: rose/src/wpi_jaco, 
+        uri:        'https://github.com/RobotRose/wpi_jaco.git',
+        version:    develop
+    }
+- git: {
+        local-name: rose/src/rail_manipulation_msgs, 
+        uri:        'https://github.com/WPI-RAIL/rail_manipulation_msgs.git',
+        version:    master
+    }
+- git: {
+        local-name: rose/src/rose_arm_controller, 
+        uri:        'https://github.com/RobotRose/rose_arm_controller.git',
+        version:    requirement/1270_create_path_planning_for_kinova
+    }
+########### Install TU/e's ED 3D world model system
+# - git: {
+#         local-name: tue/src/ed,
+#         uri:        'https://github.com/tue-robotics/ed.git',
+#         version:    18a2552ac5d3
+#     }
+# - git: {
+#         local-name: tue/src/tue_filesystem,
+#         uri:        'https://github.com/tue-robotics/tue_filesystem.git',
+#         version:    bf8c9d190d5c
+#     }
+# - git: {
+#         local-name: tue/src/geolib2,
+#         uri:        'https://github.com/tue-robotics/geolib2.git',
+#         version:    d15b0f71668a
+#     }
+# - git: {
+#         local-name: tue/src/code_profiler,
+#         uri:        'https://github.com/tue-robotics/code_profiler.git',
+#         version:    248eea58ac6c
+#     }
+# - git: {
+#         local-name: tue/src/tue_config,
+#         uri:        'https://github.com/tue-robotics/tue_config.git',
+#         version:    b80a7c737cfa
+#     }
+# - git: {
+#         local-name: tue/src/ed_object_models,
+#         uri:        'https://github.com/tue-robotics/ed_object_models.git',
+#         version:    b0c123869ab1
+#     }
+# - git: {
+#         local-name: tue/src/tue_serialization,
+#         uri:        'https://github.com/tue-robotics/tue_serialization.git',
+#         version:    7be29607ce74
+#     }
+# - git: {
+#         local-name: tue/src/rgbd,
+#         uri:        'https://github.com/tue-robotics/rgbd.git',
+#         version:    47ef61da61de
+#     }
+# - git: {
+#         local-name: tue/src/ed_gui_server,
+#         uri:        'https://github.com/tue-robotics/ed_gui_server.git',
+#         version:    54646ecc7f48
+#     }
+# - git: {
+#         local-name: tue/src/ed_navigation,
+#         uri:        'https://github.com/tue-robotics/ed_navigation.git',
+#         version:    992c7cdb550a
+#     }
+# - git: {
+#         local-name: tue/src/ed_localization,
+#         uri:        'https://github.com/tue-robotics/ed_localization.git',
+#         version:    ddbef80f7056
+#     }
+# - git: {
+#         local-name: tue/src/ed_sensor_integration,
+#         uri:        'https://github.com/tue-robotics/ed_sensor_integration.git',
+#         version:    c93d4761b67d
+#     }
