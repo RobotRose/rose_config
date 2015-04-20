@@ -41,6 +41,6 @@
     </include>  
 
     <!-- TF --> 
-    <include file="$(env LAUNCH_DIR)/robot_state.launch">
+    <include file="$(env LAUNCH_DIR)/robot_state.launch"/>
 
 </launch>
