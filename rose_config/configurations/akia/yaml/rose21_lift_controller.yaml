@@ -14,7 +14,10 @@ lift:
    p_scale:     1000    # INT Measured position values are in range [min_pos-max_pos]
    i_scale:     100000   # INT Measured position values are in range [min_pos-max_pos]
    hysteresis:  3      # INT
-   base_joint:          lift_mid_bottom_joint      # Joint name as in robot model
+   base_joint:          lift_mid_bottom_joint      # Lift bottom joint name as in robot model
+   top_joint:           lift_mid_box_joint         # Lift top joint name as in robot model
+   top_joint_mimick_factor:   -1.0     # Bottom joint angle is multiplied by this value before publishing it as top joint
+   top_joint_mimick_offset:   0.0      # This value is added to the bottom joint angle before publishing it as the top joint  
    arm_length:          0.118338       # [m] Length of the arm attached to the lift joint, the point around which the the lift rotates, and the motor
    motor_lift_distance: 0.445467       # [m] x = 435mm z = 96mm Distance between base_link and the attachment point of the back of the motor (the one the arm is not attached to)
    arm_lift_angle:      2.0943951      # [rad] Angle between the arm of the lift (the part attached to the lift joint, the point around which the the lift rotates, and the motor) and the lift itself (the line from base_link to top_link)
