@@ -17,8 +17,8 @@
         <arg name="num_worker_threads" value="8"/> 
         <arg name="sw_registered_processing" value="false"/> 
         <arg name="camera" value="$(arg kinect_camera_name)" />
-        <arg name="publish_tf" value="true" />
-        <arg name="tf_prefix" value="openni" />
+        <arg name="publish_tf" value="false" />
+        <!-- <arg name="tf_prefix" value="openni" /> -->
     </include>
 
     <param name="/$(arg kinect_camera_name)/driver/image_mode" value="2" /> <!-- NO LOW RESOLUTION -->
