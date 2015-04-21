@@ -3,11 +3,12 @@
 
     <node machine="pc1"  pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
         <remap from="robot_description" to="rose/robot_description" />
-        <!-- <remap from="joint_states" to="different_joint_states" /> -->
+        <remap from="joint_states" to="rose/joint_states" />
     </node>
 
     <node machine="pc1"  pkg="joint_state_publisher" type="joint_state_publisher" name="joint_publisher">
         <remap from="robot_description" to="rose/robot_description" />
+        <remap from="joint_states" to="rose/joint_states" />
         <rosparam>
             source_list: ['/lift_controller/lift/joint_states', '/neck/jointstates', 'mico_arm/joint_states']
             use_gui: false
