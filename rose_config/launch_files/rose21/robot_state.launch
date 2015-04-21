@@ -10,7 +10,7 @@
         <remap from="robot_description" to="rose/robot_description" />
         <remap from="joint_states" to="rose/joint_states" />
         <rosparam>
-            source_list: ['/lift_controller/lift/joint_states', '/neck/jointstates', 'mico_arm/joint_states']
+            source_list: ['/lift_controller/lift/joint_states', '/neck/jointstates']
             use_gui: false
        </rosparam>
     </node>
