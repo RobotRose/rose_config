@@ -1,13 +1,13 @@
 <launch>
     <param name="/rose/robot_description" command="$(find xacro)/xacro.py '$(find rose21_urdf)/rose21.xacro'" />
 
-    <node machine="pc1"  pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
+    <node machine="pc2"  pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" >
         <remap from="robot_description" to="rose/robot_description" />
         <remap from="joint_states" to="rose/joint_states" />
         <param name="publish_frequency" value="20" />
     </node>
 
-    <node machine="pc1"  pkg="joint_state_publisher" type="joint_state_publisher" name="joint_publisher">
+    <node machine="pc2"  pkg="joint_state_publisher" type="joint_state_publisher" name="joint_publisher">
         <remap from="robot_description" to="rose/robot_description" />
         <remap from="joint_states" to="rose/joint_states" />
         <rosparam>
