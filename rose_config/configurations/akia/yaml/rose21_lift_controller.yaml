@@ -29,15 +29,15 @@ lift:
       - [0.455094109473, 2503]
 
 bumpers:
-   bumper_width:     0.06
-   bumper_thickness: 0.02
-   bumper_footprints:                 # List of motor lengths[m] with sensor values 
-      - [0.4166, 0.190]
-      - [0.284, 0.315]
-      - [-0.284, 0.315]
-      - [-0.4036, 0.0]
-      - [-0.284, -0.315]
-      - [-0.284, -0.315]
-      - [0.284, -0.315]
-      - [0.4166, -0.190]
-      - [0.4681, 0.0]
+   bumper_width:        0.06
+   bumper_thickness:    0.02
+   bumper_footprints:                 # List of bumper center locations and orientations, order is important (first has id 0 etc.)
+      - [0.4166,  0.190,   0.0]
+      - [0.284,   0.315,   1.5707]
+      - [-0.284,  0.315,   1.5707]
+      - [-0.4036, 0.0,     3.1415]
+      - [-0.284,  -0.315,  3.1415]
+      - [-0.284,  -0.315,  4.7122]
+      - [0.284,   -0.315,  4.7122]
+      - [0.4166,  -0.190,  0.0]
+      - [0.4681,  0.0,     0.0]
