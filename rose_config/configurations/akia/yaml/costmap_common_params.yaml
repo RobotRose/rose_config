@@ -1,9 +1,9 @@
-obstacle_range: 2.0
-raytrace_range: 15.0
+obstacle_range: 2.5
+raytrace_range: 12.5
 
 # Footprint polygondefine CCW, start at top left
-footprint: [[0.39, 0.315], [-0.39, 0.315], [-0.39, -0.315], [0.39, -0.315]]
-footprint_padding: 0.01
+footprint: [[0.415, 0.30], [-0.415, 0.30], [-0.415, -0.30], [0.415, -0.30]]
+footprint_padding: 0.005
 
 transform_tolerance: 0.5
 
