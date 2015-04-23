@@ -71,7 +71,7 @@
 - git: {
         local-name: gui/src/rose_ui_support, 
         uri:        'https://github.com/RobotRose/rose_ui_support.git',
-        version:    requirement/1272_for_the_new_arm_controller
+        version:    develop
     }
 - git: {
         local-name: firmware, 
@@ -171,7 +171,7 @@
 - git: {
         local-name: rose/src/rose_arm_controller, 
         uri:        'https://github.com/RobotRose/rose_arm_controller.git',
-        version:    requirement/1270_create_path_planning_for_kinova
+        version:    develop
     }
 ########### Install TU/e's ED 3D world model system
 # - git: {
