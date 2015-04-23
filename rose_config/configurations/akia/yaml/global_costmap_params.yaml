@@ -1,9 +1,9 @@
 global_costmap:
   global_frame: /map
-  inflation_radius: 2.0
+  inflation_radius: 1.5
   robot_base_frame: /base_link
-  update_frequency: 0.5
-  publish_frequency: 0.5
+  update_frequency: 0.2
+  publish_frequency: 0.2
   static_map: false
   rolling_window: false
   track_unknown_space: false 
