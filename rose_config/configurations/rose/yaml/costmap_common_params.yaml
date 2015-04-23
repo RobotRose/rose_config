@@ -1,13 +1,7 @@
 obstacle_range: 2.0
 raytrace_range: 15.0
 
-
-# Footprint polygondefine CCW, start at top left
-footprint: [[0.39, 0.29], [-0.39, 0.29], [-0.39, -0.29], [0.39, -0.29]]
-footprint_padding: 0.01
-
 transform_tolerance: 0.5
-
 
 laser_obstacle_layer:
     observation_sources: laser_scan_sensor 

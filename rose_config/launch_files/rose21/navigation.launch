@@ -54,8 +54,10 @@
   
     <node machine="pc2" pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
         <remap from="map" to="map_planner"/> 
-        <rosparam command="load" ns="global_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml"     />
-        <rosparam command="load" ns="local_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml"     />
+        <rosparam command="load" ns="global_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml" />
+        <rosparam command="load" ns="global_costmap" file="$(env PARAM_DIR)/yaml/footprint.yaml" />
+        <rosparam command="load" ns="local_costmap" file="$(env PARAM_DIR)/yaml/costmap_common_params.yaml" />
+        <rosparam command="load" ns="local_costmap" file="$(env PARAM_DIR)/yaml/footprint.yaml" />
 
         <rosparam unless="$(arg sim)"  command="load" file="$(env PARAM_DIR)/yaml/global_costmap_params.yaml" />
         <rosparam if="$(arg sim)"      command="load" file="$(env PARAM_DIR)/yaml/global_costmap_simulation_params.yaml" />
