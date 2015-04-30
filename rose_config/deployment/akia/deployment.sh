@@ -14,7 +14,7 @@ export ROBOT_INSTALLATION="rose30"
 export ROBOT_MODEL="rose21"
 
 # Location
-export ROBOT_LOCATION="rosebv"
+export ROBOT_LOCATION="heuvel"
 
 # Configuration
 export ROBOT_CONFIG="akia"
